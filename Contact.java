@@ -27,7 +27,8 @@ public class Contact {
 	/**
 	 * Sets private variables to passed arguments 
 	 */
-	public Contact(String newFirstName, String newLastName, String newStreetAddress, String newEmailAddress, String newPhoneNumber, String newNotes){
+	public Contact(String newFirstName, String newLastName, String newStreetAddress, 
+		String newEmailAddress, String newPhoneNumber, String newNotes){
 		firstName = newFirstName;
 		lastName = newLastName;
 		streetAddress = newStreetAddress;
