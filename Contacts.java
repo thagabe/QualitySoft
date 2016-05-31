@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 
 public class Contacts {
+	
+	private String firstName, lastName, streetAddress, emailAddress, phoneNumber, notes;
+	
 	public Contacts newContact(){
 		Contacts person = new Contacts();
 		//takes in Strings with Scanner
