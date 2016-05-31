@@ -9,7 +9,7 @@ class MyContactList {
       
       
       /**
-        *This method takes care of opening listFile (a text file) and loading all of the
+        *The Contructor takes care of opening listFile (a text file) and loading all of the
         *contacts onto mainList
       **/
       public MyContactList(){
