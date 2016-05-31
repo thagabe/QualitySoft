@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * One Object of the class Contact represents one person's contact information
  */
