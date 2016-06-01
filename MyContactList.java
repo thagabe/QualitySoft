@@ -1,60 +1,61 @@
-import java.util.Scanner;
-import java.io.File;
 import java.util.List;
-import java.util.ArrayList
-/** One object of this class represents a list of contacts, **/
+import java.util.ArrayList;
+
+/**
+ * One object of this class represents an ArrayList containing Objects of class
+ * Contact.
+ */
 class MyContactList {
-      private List<Contact> mainList; //this stores the list of contacts
-      private File listFile; //this is a text file that stores all the contacts on the hard disk
-      
-      
-      /**
-        *The Contructor takes care of opening listFile (a text file) and loading all of the
-        *contacts onto mainList
-      **/
-      public MyContactList(){
-            mainList = new ArrayList<Contact>();
-            listFile.open();
-      }
-      
-      
-      /**
-       * This method is in charge of creating a new contact from its parameters and
-       * adding them to the listFile
-       **/
-      public void newContact(String first, String last, String address, String email, String phone, String notes){
-            
-      }
-      
-      /** This method returns a string representing a table of all the contacts
-       * **/
-      public String fullList(){
-            
-      }
-      
-      /**
-       * This method sorts the array from the contacts that are already present
-       **/
-      public void sort(){
-            
-      }
-      
-      
-      /**
-        * This method takes in a string which will represent a Contact's last name.
-        * Then, this method finds all Contacts which have the string as a last name and 
-        * appends them to a string and returns it. 
-      **/
-      public String search(String entry){  //This is the string used to search Contacts that have it as a last name
-            String results; //this will be the string we append all the search results to 
-            return results;
-      }
-      
-      /**
-        * This method takes care of all things that must be done before the program closes. It copies all the
-        *current values of mainList to listFile and closes listFile.
-      **/
-      public void exit(){
-            
-      }
+
+	private List<Contact> mainList; // this stores the list of contacts
+
+	/**
+	 * The Constructor takes care of initializing the ArrayList when this object
+	 * is instantiated.
+	 */
+	public MyContactList() {
+		mainList = new ArrayList<Contact>();
+	}
+
+	/**
+	 * This method is in charge of creating a new contact from its parameters
+	 * and adding them to the listFile. Checks if at least last name is present
+	 * otherwise it returns false and does not set anything.
+	 */
+	public boolean newContact(String first, String last, String address, String email, String phone, String notes) {
+		if (last != "") {
+			Contact person = new Contact(first, last, address, email, phone, notes);
+			mainList.add(person);
+			return true;
+		} else
+			return false;
+	}
+
+	/**
+	 * This method calls sortArray() then returns the ArrayList.
+	 **/
+	public List<Contact> getArrayListForPrint() {
+		// sortArray();
+		return mainList;
+	}
+
+	/**
+	 * This method sorts the ArrayList based on the last name in alphabetical
+	 * order from the contacts that are already present in the List, if two
+	 * Contact objects share the same last name then sortArray() will arrange
+	 * them based on alphabetical order on the first names.
+	 */
+	public void sortArray() {
+	}
+
+	/**
+	 * This method takes in a String which contains the last name to lookup in
+	 * the ArrayList. If an occurrence of the String is encountered it will
+	 * return a new ArrayList with the object(s) appended to this new ArrayList.
+	 */
+	public List<Contact> searchArray(String searchLastName) {
+		List<Contact> lookUpList = new ArrayList<Contact>();
+		return lookUpList;
+	}
+
 }
