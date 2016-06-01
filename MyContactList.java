@@ -45,7 +45,7 @@ class MyContactList {
 	 * Contact objects share the same last name then sortArray() will arrange
 	 * them based on alphabetical order on the first names.
 	 */
-	public void sortArray() {
+	private void sortArray() {
 	}
 
 	/**
