@@ -60,3 +60,10 @@ class MyContactList {
 	}
 
 }
+
+/** Comments 
+ * I think this is very good, I like the way we renamed the methods to describe
+ * what they are doing. In the future, I think sortArray() should be private, so that
+ * users of this class don't always have to call it before printing the contact list.
+ * 
+ * **/
