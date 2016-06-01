@@ -54,6 +54,7 @@ class MyContactList {
 	 * return a new ArrayList with the object(s) appended to this new ArrayList.
 	 */
 	public List<Contact> searchArray(String searchLastName) {
+		// Ignore Case!
 		List<Contact> lookUpList = new ArrayList<Contact>();
 		return lookUpList;
 	}
