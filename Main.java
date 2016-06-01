@@ -15,3 +15,11 @@ public class Tester {
 	}
 
 }
+/** Feedback from Alex 
+ * This class is a work in progress, we still need to take care of file input and output.
+ * Since we are printing our contacts in a table, we must also print column names in main
+ * In the future I think this Tester class should have some other static methods that each
+ * take care of a specific job such as printing, scanning, or reading. That way the main 
+ * method doesn't look so clutered. Also, lets rename the class from Tester to TestContactList
+ * or something
+ * **/
