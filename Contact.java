@@ -116,3 +116,10 @@ public class Contact {
 	}
 
 }
+/** Feedback from Alex
+ * I think this class is well done, it specifies what one object of this class
+ * represents, has a constructor for each variable along with accessors and mutators.
+ * In the future we will need to implement comparable so we can sort lists of these objects.
+ * LEts hope the \t tabs do what we're hoping. There are some formatting classes java
+ * has that we might be able to use
+ * **/
