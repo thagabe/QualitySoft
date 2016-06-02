@@ -123,3 +123,8 @@ public class Contact {
  * LEts hope the \t tabs do what we're hoping. There are some formatting classes java
  * has that we might be able to use
  * **/
+/** Feedback from Adina
+ * The definition of this class is organized, clear, and works correctly. I created the class to test it and to check that tabs do what 
+ * we're hoping. The output I got:
+ * Ann			Green			123 main St			12345678			ann@gmail.com			ann is cool
+ * /
