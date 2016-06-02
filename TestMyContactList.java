@@ -1,4 +1,4 @@
-public class Tester {
+public class TestMyContactList {
 
 	public static void main(String[] args) {
 		MyContactList list1 = new MyContactList();
