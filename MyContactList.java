@@ -32,31 +32,44 @@ class MyContactList {
 	}
 
 	/**
-	 * This method calls sortArray() then returns the ArrayList.
+	 * This method calls sortArray(), then it will format the object's data to be returned to TestMyContactList.
 	 **/
-	public List<Contact> getArrayListForPrint() {
-		// sortArray();
-		return mainList;
+	public String toString() {
+		sortArray();
+		String theFormat = "";
+		for (Contact element: mainList){
+			theFormat = element.toString() + "\n";
+		}
+		return theFormat;
 	}
-
+	
 	/**
 	 * This method sorts the ArrayList based on the last name in alphabetical
 	 * order from the contacts that are already present in the List, if two
 	 * Contact objects share the same last name then sortArray() will arrange
 	 * them based on alphabetical order on the first names.
 	 */
+	
 	private void sortArray() {
 	}
 
 	/**
 	 * This method takes in a String which contains the last name to lookup in
 	 * the ArrayList. If an occurrence of the String is encountered it will
-	 * return a new ArrayList with the object(s) appended to this new ArrayList.
+	 * create a new ArrayList with the object(s) appended to this new ArrayList.
+	 * It then returns a Formatted String with the objects' stored information.
 	 */
-	public List<Contact> searchArray(String searchLastName) {
-		// Ignore Case!
+	public String searchArray(String searchLastName) {
 		List<Contact> lookUpList = new ArrayList<Contact>();
-		return lookUpList;
+		String formatted = "";
+		
+		//Must Ignore Case
+		//search logic
+		
+		for (Contact i: lookUpList){
+			formatted = i.toString() + "\n";
+		}
+		return formatted;
 	}
 
 }
