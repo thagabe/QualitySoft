@@ -23,3 +23,11 @@ public class Tester {
  * method doesn't look so clutered. Also, lets rename the class from Tester to TestContactList
  * or something
  * **/
+ 
+/** Feedback from Adina
+ * Change the name of the class so that it matches the name of the .java file. Or, as Alex said, it would be even better to call
+ * the file TestMyContactList.java and call class TestMyContactList. I believe this would be more descriptive.
+ * Write JavaDoc format comments above this class that should start "This class tests..."
+ * Create an object of EACH class (both class Contact and class MyContactList) and call EACH method on these objects.
+ * COPY AND PASTE recording of run.
+ * /
