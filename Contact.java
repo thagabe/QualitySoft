@@ -125,6 +125,6 @@ public class Contact {
  * **/
 /** Feedback from Adina
  * The definition of this class is organized, clear, and works correctly. I created the class to test it and to check that tabs do what 
- * we're hoping. The output I got:
+ * we're hoping. The output:
  * Ann			Green			123 main St			12345678			ann@gmail.com			ann is cool
  * /
