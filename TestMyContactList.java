@@ -10,7 +10,10 @@ public class TestMyContactList {
 		Contact myContact = new Contact("", "", "", "", "", "");
 		
 		// Calling all methods from Class MyContactList 
-		list1.newContact("Alex", "Lui", "1729 Madras st", "alex.lui@gmail.com", "664-543-4122", "Manager");
+		if(list1.newContact("Alex", "Lui", "1729 Madras st", "alex.lui@gmail.com", "664-543-4122", "Manager"))
+			System.out.println("Contact Created Successfully!\n");
+		else
+			System.out.println("You have not entered a Last Name, which is required\n");
 		System.out.println("Should print out ContactList: \n" + list1);
 		System.out.println("Should print contact(s) if found [empty string for now]: " + list1.searchArray("Lui"));
 		
