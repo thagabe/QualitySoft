@@ -37,6 +37,9 @@ public class TestMyContactList {
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------
+Contact Created Successfully!
+
+Should print out ContactList: 
 Alex	Lui	1729 Madras st	alex.lui@gmail.com	664-543-4122	Manager
 
 Should print contact(s) if found [empty string for now]: 
@@ -46,6 +49,7 @@ Should print contact(s) if found [empty string for now]:
 First Name: Gabe Last Name: Rodriguez Street: 1623 Van Halen Rd Email: g.rodriguez@gmail.com Phone: 650-123-4567 Notes: Programmer
 
 Gabe	Rodriguez	1623 Van Halen Rd	g.rodriguez@gmail.com	650-123-4567	Programmer
+
 --------------------------------------------------------------------------------------------------------------------------------- */
 /** Feedback from Alex 
  * This class is a work in progress, we still need to take care of file input and output.
