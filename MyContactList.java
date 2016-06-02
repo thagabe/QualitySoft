@@ -67,3 +67,8 @@ class MyContactList {
  * users of this class don't always have to call it before printing the contact list.
  * 
  * **/
+ 
+ /** Feddback from Adina
+  * Use toString() method instead of getArrayListForPrint() to avoid giving the main() the private data structure since it can destroy it
+  * as our director noted.
+  * /
