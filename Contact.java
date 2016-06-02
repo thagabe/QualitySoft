@@ -111,8 +111,8 @@ public class Contact {
 	 * Returns formatted string displaying all characteristics of Contact
 	 */
 	public String toString() {
-		return (firstName + "\t\t\t" + lastName + "\t\t\t" + streetAddress + "\t\t\t" + emailAddress + "\t\t\t"
-				+ phoneNumber + "\t\t\t" + notes);
+		return (firstName + "\t" + lastName + "\t" + streetAddress + "\t" + emailAddress + "\t"
+				+ phoneNumber + "\t" + notes);
 	}
 
 }
