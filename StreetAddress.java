@@ -6,9 +6,11 @@ class StreetAddress{
       int zipCode;
       
       //constructor
-      public StreetAddress()
-      {
-          streetNumber = -1;
+      public StreetAddress()  
+      {                          
+            //for ints, set default to -1, lets users know that field is empty
+            //for Strings, set default to NULL, lets users know that field is empty
+          streetNumber = -1;  
           streetName = NULL;
           cityName = NULL;
           stateName = NULL;
