@@ -5,7 +5,7 @@ public class Contact {
 
 	private String firstName;
 	private String lastName;
-	private String streetAddress;
+	private StreetAddress streetAddress;
 	private String emailAddress;
 	private String phoneNumber;
 	private String notes;
@@ -13,7 +13,7 @@ public class Contact {
 	/**
 	 * Sets private variables to passed arguments
 	 */
-	public Contact(String newFirstName, String newLastName, String newStreetAddress, String newEmailAddress,
+	public Contact(String newFirstName, String newLastName, StreetAddress newStreetAddress, String newEmailAddress,
 			String newPhoneNumber, String newNotes) {
 		firstName = newFirstName;
 		lastName = newLastName;
@@ -40,7 +40,7 @@ public class Contact {
 	/**
 	 * Sets streetName to newStreetName
 	 */
-	public void setStreetAddress(String newStreetAddress) {
+	public void setStreetAddress(StreetAddress newStreetAddress) {
 		streetAddress = newStreetAddress;
 	}
 
@@ -82,7 +82,7 @@ public class Contact {
 	/**
 	 * Returns value of streetAddress
 	 */
-	public String getStreetAddress() {
+	public StreetAddress getStreetAddress() {
 		return streetAddress;
 	}
 
@@ -111,7 +111,7 @@ public class Contact {
 	 * Returns formatted string displaying all characteristics of Contact
 	 */
 	public String toString() {
-		return (firstName + "\t" + lastName + "\t" + streetAddress + "\t" + emailAddress + "\t"
+		return (firstName + "\t" + lastName + "\t" + streetAddress.toString() + "\t" + emailAddress + "\t"
 				+ phoneNumber + "\t" + notes);
 	}
 
