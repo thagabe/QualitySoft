@@ -22,7 +22,7 @@ class MyContactList {
 	 * and adding them to the listFile. Checks if at least last name is present
 	 * otherwise it returns false and does not set anything.
 	 */
-	public boolean newContact(String first, String last, String address, String email, String phone, String notes) {
+	public boolean newContact(String first, String last, StreetAddress address, String email, String phone, String notes) {
 		if (last != "") {
 			Contact person = new Contact(first, last, address, email, phone, notes);
 			mainList.add(person);
