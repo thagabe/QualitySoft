@@ -5,33 +5,12 @@
 public class TestMyContactList {
 
 	public static void main(String[] args) {
-		// Two objects defined and initialized
-		MyContactList list1 = new MyContactList();
-		Contact myContact = new Contact("", "", "", "", "", "");
-		
-		// Calling all methods from Class MyContactList 
-		if(list1.newContact("Alex", "Lui", "1729 Madras st", "alex.lui@gmail.com", "664-543-4122", "Manager"))
-			System.out.println("Contact Created Successfully!\n");
-		else
-			System.out.println("You have not entered a Last Name, which is required\n");
-		System.out.println("Should print out ContactList: \n" + list1);
-		System.out.println("Should print contact(s) if found [empty string for now]: " + list1.searchArray("Lui"));
-		
-		
-		System.out.println("\n------------------------------------\n");
-		
-		// Calling all methods from Class Contact
-		myContact.setFirstName("Gabe");
-		myContact.setLastName("Rodriguez");
-		myContact.setStreetAddress("1623 Van Halen Rd");
-		myContact.setEmailAddress("g.rodriguez@gmail.com");
-		myContact.setPhoneNumber("650-123-4567");
-		myContact.setNotes("Programmer");
-		System.out.printf("First Name: %s Last Name: %s Street: %s Email: %s Phone: %s Notes: %s\n",
-				myContact.getFirstName(), myContact.getLastName(), myContact.getStreetAddress(),
-				myContact.getEmailAddress(), myContact.getPhoneNumber(), myContact.getNotes());
-		System.out.println();
-		System.out.println(myContact);
+		MyContactList list = new MyContactList();
+		System.out.println(list.toString());
+		list.addContact(promptUser());
+		System.out.println(list.toString());
+		list.addContact(promptUser());
+		System.out.println(list.toString());
 	}
 	
 	//To use later
