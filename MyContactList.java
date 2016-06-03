@@ -30,7 +30,7 @@ public class MyContactList {
 		} else
 			return false;
 	}
-	public void AddContact(Contact person){
+	public void addContact(Contact person){
 		mainList.add(person);
 	}
 
