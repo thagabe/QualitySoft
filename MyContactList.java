@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * One object of this class represents an ArrayList containing Objects of class
  * Contact.
  */
-class MyContactList {
+public class MyContactList {
 
 	private List<Contact> mainList; // this stores the list of contacts
 
@@ -30,17 +30,22 @@ class MyContactList {
 		} else
 			return false;
 	}
+	public void AddContact(Contact person){
+		mainList.add(person);
+	}
 
 	/**
 	 * This method calls sortArray(), then it will format the object's data to be returned to TestMyContactList.
 	 **/
 	public String toString() {
+		
+		System.out.println("-FIRST NAME-\t\t\t-LAST NAME-\t\t\t-STREETADDRESS-\t\t\t\t-EMAIL ADDRESS-\t\t\t-PHONE #-\t\t\t-NOTES-");
 		sortArray();
-		String theFormat = "";
+		StringBuffer theFormat = new StringBuffer();
 		for (Contact element: mainList){
-			theFormat = element.toString() + "\n";
+			theFormat.append(element.toString() + "\n");
 		}
-		return theFormat;
+		return theFormat.toString();
 	}
 	
 	/**
