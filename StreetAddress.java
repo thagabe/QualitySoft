@@ -1,26 +1,27 @@
 public class StreetAddress{
-    String streetNumber;
-    String streetName;
-    String cityName;
-    String stateName;
-    String zipCode;
+    
+        String streetNumber;
+        String streetName;
+        String cityName;
+        String stateName;
+        String zipCode;
     
     //constructors
     public StreetAddress(){
-    	this.streetNumber = null;
-    	this.streetName = null;
-    	this.cityName = null;
-    	this.stateName = null;
-    	this.zipCode = null;
+    	this.streetNumber = "";
+    	this.streetName = "";
+    	this.cityName = "";
+    	this.stateName = "";
+    	this.zipCode = "";
     }
     public StreetAddress(String streetNumber, String streetName, String cityName, String stateName, String zipCode)  
     {                          
          
-        this.streetNumber = streetNumber; 
-        this.streetName = streetName;
-        this.cityName = cityName;
-        this.stateName = stateName;
-        this.zipCode = zipCode;
+        this.streetNumber = streetNumber.trim(); 
+        this.streetName = streetName.trim();
+        this.cityName = cityName.trim();
+        this.stateName = stateName.trim();
+        this.zipCode = zipCode.trim();
         
     }
     
@@ -43,19 +44,20 @@ public class StreetAddress{
     
     //mutators
     void setStreetNumber(String streetNumber){
-          this.streetNumber = streetNumber;
+          this.streetNumber = streetNumber.trim();
+          
     }
     void setStreetName(String streetName){
-          this.streetName = streetName;
+          this.streetName = streetName.trim();
     }
     void setCityName(String cityName){
-          this.cityName = cityName;
+          this.cityName = cityName.trim();
     }
     void setStateName(String stateName){
-          this.stateName = stateName;
+          this.stateName = stateName.trim();
     }
     void setZipCode(String zipCode){
-          this.zipCode = zipCode;
+          this.zipCode = zipCode.trim();
     }
     
     //toString
@@ -64,11 +66,11 @@ public class StreetAddress{
     	if(!this.streetNumber.isEmpty())
     		buffer.append(this.streetNumber.trim() + " ");
     	if(!this.streetName.isEmpty())
-    		buffer.append(this.streetName.trim());
+    		buffer.append(this.streetName);
     	if(!this.cityName.isEmpty())
-    		buffer.append(", " + this.cityName.trim());
+    		buffer.append(", " + this.cityName);
     	if(!this.stateName.isEmpty())
-    		buffer.append(", " + this.stateName.trim());
+    		buffer.append(", " + this.stateName);
     	if(!this.zipCode.isEmpty())
     		buffer.append(", " + this.zipCode.trim());
     	return buffer.toString();
