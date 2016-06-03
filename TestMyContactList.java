@@ -33,7 +33,42 @@ public class TestMyContactList {
 		System.out.println();
 		System.out.println(myContact);
 	}
-
+	private static Contact promptUser(){
+		Contact createContact = new Contact();
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("____________Enter Contact Prompt____________");
+		System.out.print("Enter your first name: ");
+		createContact.setFirstName(input.nextLine());
+		
+		do{
+			System.out.print("Enter your last name: ");
+			createContact.setLastName(input.nextLine());
+			if(createContact.getLastName().isEmpty())
+				System.out.println("---You must enter in your last name---");
+		}while(createContact.getLastName().isEmpty());
+		
+		System.out.println("Street Address:");
+		System.out.print("\t" + "Enter in your Street Number: ");
+		createContact.getStreetAddress().setStreetNumber(input.nextLine());
+		System.out.print("\t" + "Enter in your Street Name: ");
+		createContact.getStreetAddress().setStreetName(input.nextLine());
+		System.out.print("\t" + "Enter in your City Name: ");
+		createContact.getStreetAddress().setCityName(input.nextLine());
+		System.out.print("\t" + "Enter in your State Name: ");
+		createContact.getStreetAddress().setStateName(input.nextLine());
+		System.out.print("\t" + "Enter in your Zip Code: ");
+		createContact.getStreetAddress().setZipCode(input.nextLine());
+		
+		System.out.print("Enter your email address: ");
+		createContact.setEmailAddress(input.nextLine());
+		System.out.print("Enter your phone number: ");
+		createContact.setPhoneNumber(input.nextLine());
+		System.out.print("Enter any notes about this contact: ");
+		createContact.setNotes(input.nextLine());
+		System.out.println("____________End Prompt____________\n\n");
+		return createContact;
+	}
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------
