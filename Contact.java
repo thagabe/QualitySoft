@@ -13,28 +13,36 @@ public class Contact {
 	/**
 	 * Sets private variables to passed arguments
 	 */
+	public Contact(){
+		firstName = "";
+		lastName = "";
+		streetAddress = new StreetAddress();
+		emailAddress = "";
+		phoneNumber = "";
+		notes = "";
+	}
 	public Contact(String newFirstName, String newLastName, StreetAddress newStreetAddress, String newEmailAddress,
 			String newPhoneNumber, String newNotes) {
-		firstName = newFirstName;
-		lastName = newLastName;
+		firstName = newFirstName.trim();
+		lastName = newLastName.trim();
 		streetAddress = newStreetAddress;
-		emailAddress = newEmailAddress;
-		phoneNumber = newPhoneNumber;
-		notes = newNotes;
+		emailAddress = newEmailAddress.trim();
+		phoneNumber = newPhoneNumber.trim();
+		notes = newNotes.trim();
 	}
 
 	/**
 	 * Sets firstName to newFirstName
 	 */
 	public void setFirstName(String newFirstName) {
-		firstName = newFirstName;
+		firstName = newFirstName.trim();
 	}
 
 	/**
 	 * Sets lastName to newFirstName
 	 */
 	public void setLastName(String newLastName) {
-		lastName = newLastName;
+		lastName = newLastName.trim();
 	}
 
 	/**
@@ -48,21 +56,21 @@ public class Contact {
 	 * Sets emailAddress to newEmailAddress
 	 */
 	public void setEmailAddress(String newEmailAddress) {
-		emailAddress = newEmailAddress;
+		emailAddress = newEmailAddress.trim();
 	}
 
 	/**
 	 * Sets phoneNumber to newPhoneNumber
 	 */
 	public void setPhoneNumber(String newPhoneNumber) {
-		phoneNumber = newPhoneNumber;
+		phoneNumber = newPhoneNumber.trim();
 	}
 
 	/**
 	 * Sets notes to newNotes
 	 */
 	public void setNotes(String newNotes) {
-		notes = newNotes;
+		notes = newNotes.trim();
 	}
 
 	/**
@@ -111,8 +119,26 @@ public class Contact {
 	 * Returns formatted string displaying all characteristics of Contact
 	 */
 	public String toString() {
-		return (firstName + "\t" + lastName + "\t" + streetAddress.toString() + "\t" + emailAddress + "\t"
-				+ phoneNumber + "\t" + notes);
+		
+		StringBuffer buffer = new StringBuffer();
+		if(!firstName.isEmpty())
+			buffer.append(firstName);
+		buffer.append("\t\t\t");
+		if(!lastName.isEmpty())
+			buffer.append(lastName);
+		buffer.append("\t\t\t");
+		if(!streetAddress.toString().isEmpty())
+			buffer.append(streetAddress.toString());
+		buffer.append("\t\t\t\t");
+		if(!emailAddress.isEmpty())
+			buffer.append(emailAddress);
+		buffer.append("\t\t\t");
+		if(!phoneNumber.isEmpty())
+			buffer.append(phoneNumber);
+		buffer.append("\t\t\t");
+		if(!notes.isEmpty())
+			buffer.append(notes);
+		return buffer.toString();
 	}
 
 }
