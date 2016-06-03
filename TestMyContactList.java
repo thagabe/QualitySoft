@@ -22,7 +22,7 @@ public class TestMyContactList {
 		Contact createContact = new Contact();
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("____________Enter Contact Prompt____________");
+	//	System.out.println("____________Enter Contact Prompt____________");
 		System.out.print("Enter your first name: ");
 		createContact.setFirstName(input.nextLine());
 		
@@ -33,7 +33,7 @@ public class TestMyContactList {
 				System.out.println("---You must enter in your last name---");
 		}while(createContact.getLastName().isEmpty());
 		
-		System.out.println("Street Address:");
+	//	System.out.println("Street Address:");
 		System.out.print("\t" + "Enter in your Street Number: ");
 		createContact.getStreetAddress().setStreetNumber(input.nextLine());
 		System.out.print("\t" + "Enter in your Street Name: ");
@@ -51,7 +51,7 @@ public class TestMyContactList {
 		createContact.setPhoneNumber(input.nextLine());
 		System.out.print("Enter any notes about this contact: ");
 		createContact.setNotes(input.nextLine());
-		System.out.println("____________End Prompt____________\n\n");
+	//	System.out.println("____________End Prompt____________\n\n");
 		return createContact;
 	}
 }
