@@ -33,6 +33,12 @@ public class TestMyContactList {
 		System.out.println();
 		System.out.println(myContact);
 	}
+	
+	//To use later
+	/** promptUser() 
+	 * This method takes care of all the user prompting and returns 
+	 * a contact object containing all the information
+	**/
 	private static Contact promptUser(){
 		Contact createContact = new Contact();
 		Scanner input = new Scanner(System.in);
