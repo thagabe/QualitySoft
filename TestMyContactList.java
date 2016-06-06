@@ -87,3 +87,16 @@ Gabe	Rodriguez	1623 Van Halen Rd	g.rodriguez@gmail.com	650-123-4567	Programmer
  * Create an object of EACH class (both class Contact and class MyContactList) and call EACH method on these objects.
  * COPY AND PASTE recording of run.
  * /
+ * 
+/** Feedback from Gabe to Adina
+ * on TestMyContactList
+ * 	Make Scanner private;
+ * 	More descriptive object name;
+ * 	I liked what you did when asking for last name, but i think the guideline wants us to just not add the contact if the
+ * 	last name wasn't entered. Maybe add it as a helper method and use it if allowed?;
+ * 	To both Alex + Adina: Does the use of the promptUser() method + the addContact(Contact person) makes the use of 
+ * 	newContact(...) essentially useless? Should we get rid of newContact(...);
+ * on Contact()
+ * 	Instead of Assignments onthe constructor why don't we just call the setters thus minimizing code?
+ * 	Do we need that many tabs?
+ */
