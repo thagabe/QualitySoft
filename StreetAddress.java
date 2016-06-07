@@ -1,7 +1,7 @@
 
 /** Class StreetAddress
  * This class represents one street address object, it has fields that specify
- * a person's home address. It has getters, setters, and a toString method
+ * a person's home address. It has getters, setters, and a toString method, AL
  * **/
 public class StreetAddress{
     
@@ -24,7 +24,7 @@ public class StreetAddress{
     }
     /** Full Constructor
      * This contains parameters for each varible in the class and assigns the
-     * class variables to their respective parameter
+     * class variables to their respective parameter. AL
      * **/
     public StreetAddress(String streetNumber, String streetName, String cityName, String stateName, String zipCode)  
     {                          
@@ -39,31 +39,31 @@ public class StreetAddress{
     
     //ACCESSORS
     /**
-     * returns streetNumber
+     * returns streetNumber, AL.
      * **/
     String getStreetNumber(){
           return streetNumber;
     }
     /**
-     * returns streetName
+     * returns streetName AL
      * **/
     String getStreetName(){
           return streetName;
     }
     /**
-     * returns cityName
+     * returns cityName, AL
      * **/
     String getCityName(){
           return cityName;
     }
     /**
-     * returns stateName
+     * returns stateName, AL
      * **/
     String getStateName(){
           return stateName;
     }
     /**
-     * returns zipCode
+     * returns zipCode AL
      * **/
     String getzipCode(){
           return zipCode;
@@ -71,38 +71,40 @@ public class StreetAddress{
     
     //MUTATORS
     /**
-     * sets streetNumber to parameter
+     * sets streetNumber to parameter, AL
      * **/
     void setStreetNumber(String streetNumber){
           this.streetNumber = streetNumber.trim();
           
     }
     /**
-     * sets streetName to parameter
+     * sets streetName to parameter, AL
      * **/
     void setStreetName(String streetName){
           this.streetName = streetName.trim();
     }
     /**
-     * sets cityName to parameter
+     * sets cityName to parameter, AL
      * **/
     void setCityName(String cityName){
           this.cityName = cityName.trim();
     }
     /**
-     * sets stateName to parameter
+     * sets stateName to parameter, AL
      * **/
     void setStateName(String stateName){
           this.stateName = stateName.trim();
     }
     /**
-     * sets zipCode to parameter
+     * sets zipCode to parameter, AL
      * **/
     void setZipCode(String zipCode){
           this.zipCode = zipCode.trim();
     }
     
-    //toString
+    /** 
+    * returns a string with all the information for a street address, AL
+    * **/ 
     public String toString(){
     	StringBuffer buffer = new StringBuffer();
     	if(!this.streetNumber.isEmpty())
