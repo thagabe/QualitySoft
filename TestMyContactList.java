@@ -1,4 +1,4 @@
-/**
+/** AL = Alex, GR = Gabe, AK = Adina
  * This Class tests our other 2 Classes [Contacts, MyContactList] by calling all
  * public methods on those Classes and (for the ones that return) will print output.
  */
