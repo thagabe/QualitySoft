@@ -7,14 +7,14 @@ import java.util.ArrayList;
  */
 public class MyContactList {
 
-	private List<Contact> mainList; // this stores the list of contacts
+	private List<Contact> contactList; // this stores the list of contacts
 
 	/**
 	 * The Constructor takes care of initializing the ArrayList when this object
 	 * is instantiated.
 	 */
 	public MyContactList() {
-		mainList = new ArrayList<Contact>();
+		contactList = new ArrayList<Contact>();
 	}
 
 	/**
@@ -23,7 +23,7 @@ public class MyContactList {
 	 * otherwise it returns false and does not set anything.
 	 */
 	public void addContact(Contact person){
-		mainList.add(person);
+		contactList.add(person);
 	}
 
 	/**
@@ -34,7 +34,7 @@ public class MyContactList {
 		System.out.println("-FIRST NAME-\t\t\t-LAST NAME-\t\t\t-STREETADDRESS-\t\t\t\t-EMAIL ADDRESS-\t\t\t-PHONE #-\t\t\t-NOTES-");
 		sortArray();
 		StringBuffer theFormat = new StringBuffer();
-		for (Contact element: mainList){
+		for (Contact element: contactList){
 			theFormat.append(element.toString() + "\n");
 		}
 		return theFormat.toString();
@@ -56,7 +56,7 @@ public class MyContactList {
 	 * create a new ArrayList with the object(s) appended to this new ArrayList.
 	 * It then returns a Formatted String with the objects' stored information.
 	 */
-	public String searchArray(String searchLastName) {
+	public String searchContactByLastName(String searchLastName) {
 		List<Contact> lookUpList = new ArrayList<Contact>();
 		String formatted = "";
 		
