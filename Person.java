@@ -11,7 +11,7 @@ public class Person {
 	private String notes;
 
 	/**
-	 * Sets private variables to passed arguments
+	 * Sets private variables to passed arguments GR,AK
 	 */
 	public Person(){
 		firstName = "";
@@ -32,56 +32,56 @@ public class Person {
 	}
 
 	/**
-	 * Sets firstName to newFirstName
+	 * Sets firstName to newFirstName GR,AK
 	 */
 	public void setFirstName(String firstName) {
 		this.firstName = firstName.trim();
 	}
 
 	/**
-	 * Sets lastName to newFirstName
+	 * Sets lastName to newFirstName GR,AK
 	 */
 	public void setLastName(String lastName) {
 		this.lastName = lastName.trim();
 	}
 
 	/**
-	 * Sets streetName to newStreetName
+	 * Sets streetName to newStreetName GR,AK
 	 */
 	public void setStreetAddress(StreetAddress streetAddress) {
 		this.streetAddress = streetAddress;
 	}
 
 	/**
-	 * Sets emailAddress to newEmailAddress
+	 * Sets emailAddress to newEmailAddress GR,AK
 	 */
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress.trim();
 	}
 
 	/**
-	 * Sets phoneNumber to newPhoneNumber
+	 * Sets phoneNumber to newPhoneNumber GR,AK
 	 */
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber.trim();
 	}
 
 	/**
-	 * Sets notes to newNotes
+	 * Sets notes to newNotes GR,AK
 	 */
 	public void setNotes(String notes) {
 		this.notes = notes.trim();
 	}
 
 	/**
-	 * Returns value of firstName
+	 * Returns value of firstName GR,AK
 	 */
 	public String getFirstName() {
 		return firstName;
 	}
 
 	/**
-	 * Returns value of lastName
+	 * Returns value of lastName GR,AK
 	 */
 	public String getLastName() {
 		return lastName;
