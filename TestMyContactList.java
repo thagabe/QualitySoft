@@ -16,7 +16,7 @@ public class TestMyContactList {
 	}
 	
 	//To use later
-	/** promptUser() 
+	/** promptUser() AL
 	 * This method takes care of all the user prompting and returns 
 	 * a contact object containing all the information
 	**/
