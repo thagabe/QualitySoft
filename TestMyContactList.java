@@ -7,9 +7,11 @@ public class TestMyContactList {
 	public static void main(String[] args) {
 		MyContactList list = new MyContactList();
 		System.out.println(list.toString());
-		list.addContact(promptUser());
+		list.addContact(new Contact("Abraham","Ford", new StreetAddress("2521","South Court",
+			"Palo Alto","California","94306"),"smith@gmail.com","(650) 295-4836"));
 		System.out.println(list.toString());
-		list.addContact(promptUser());
+		list.addContact(new Contact("Abraham","Ford", new StreetAddress("2521","South Court",
+			"Palo Alto","California","94306"),"smith@gmail.com","(650) 295-4836"));
 		System.out.println(list.toString());
 	}
 	
