@@ -7,10 +7,10 @@ public class TestMyContactList {
 	public static void main(String[] args) {
 		MyContactList list = new MyContactList();
 		System.out.println(list.toString());
-		list.addContact(new Contact("Abraham","Ford", new StreetAddress("2521","South Court",
+		list.addContact(new Person("Abraham","Ford", new StreetAddress("2521","South Court",
 			"Palo Alto","California","94306"),"smith@gmail.com","(650) 295-4836"));
 		System.out.println(list.toString());
-		list.addContact(new Contact("Abraham","Ford", new StreetAddress("2521","South Court",
+		list.addContact(new Person("Abraham","Ford", new StreetAddress("2521","South Court",
 			"Palo Alto","California","94306"),"smith@gmail.com","(650) 295-4836"));
 		System.out.println(list.toString());
 	}
@@ -20,8 +20,8 @@ public class TestMyContactList {
 	 * This method takes care of all the user prompting and returns 
 	 * a contact object containing all the information
 	**/
-	private static Contact promptUser(){
-		Contact createContact = new Contact();
+	private static Person promptUser(){
+		Person createContact = new Person();
 		Scanner input = new Scanner(System.in);
 		
 	//	System.out.println("____________Enter Contact Prompt____________");
