@@ -23,7 +23,8 @@ public class MyContactList {
 	 * otherwise it returns false and does not set anything.
 	 */
 	public void addContact(Contact person){
-		contactList.add(person);
+		if(!person.getLastName().trim().isEmpty())
+			contactList.add(person);
 	}
 
 	/**
