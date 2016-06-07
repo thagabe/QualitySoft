@@ -1,7 +1,7 @@
 /**
  * One Object of the class Contact represents one person's contact information
  */
-public class Contact {
+public class Person {
 
 	private String firstName;
 	private String lastName;
@@ -13,7 +13,7 @@ public class Contact {
 	/**
 	 * Sets private variables to passed arguments
 	 */
-	public Contact(){
+	public Person(){
 		firstName = "";
 		lastName = "";
 		streetAddress = new StreetAddress();
@@ -21,56 +21,56 @@ public class Contact {
 		phoneNumber = "";
 		notes = "";
 	}
-	public Contact(String newFirstName, String newLastName, StreetAddress newStreetAddress, String newEmailAddress,
-			String newPhoneNumber, String newNotes) {
-		firstName = newFirstName.trim();
-		lastName = newLastName.trim();
-		streetAddress = newStreetAddress;
-		emailAddress = newEmailAddress.trim();
-		phoneNumber = newPhoneNumber.trim();
-		notes = newNotes.trim();
+	public Person(String firstName, String lastName, StreetAddress streetAddress, String emailAddress,
+			String phoneNumber, String notes) {
+		this.setFirstName(firstName);
+		this.setLastName(lastName);
+		this.setStreetAddress(streetAddress);
+		this.setEmailAddress(emailAddress);
+		this.setPhoneNumber(phoneNumber);
+		this.setNotes(notes);
 	}
 
 	/**
 	 * Sets firstName to newFirstName
 	 */
-	public void setFirstName(String newFirstName) {
-		firstName = newFirstName.trim();
+	public void setFirstName(String firstName) {
+		this.firstName = firstName.trim();
 	}
 
 	/**
 	 * Sets lastName to newFirstName
 	 */
-	public void setLastName(String newLastName) {
-		lastName = newLastName.trim();
+	public void setLastName(String lastName) {
+		this.lastName = lastName.trim();
 	}
 
 	/**
 	 * Sets streetName to newStreetName
 	 */
-	public void setStreetAddress(StreetAddress newStreetAddress) {
-		streetAddress = newStreetAddress;
+	public void setStreetAddress(StreetAddress streetAddress) {
+		this.streetAddress = streetAddress;
 	}
 
 	/**
 	 * Sets emailAddress to newEmailAddress
 	 */
-	public void setEmailAddress(String newEmailAddress) {
-		emailAddress = newEmailAddress.trim();
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress.trim();
 	}
 
 	/**
 	 * Sets phoneNumber to newPhoneNumber
 	 */
-	public void setPhoneNumber(String newPhoneNumber) {
-		phoneNumber = newPhoneNumber.trim();
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber.trim();
 	}
 
 	/**
 	 * Sets notes to newNotes
 	 */
-	public void setNotes(String newNotes) {
-		notes = newNotes.trim();
+	public void setNotes(String notes) {
+		this.notes = notes.trim();
 	}
 
 	/**
