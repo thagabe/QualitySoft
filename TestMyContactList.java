@@ -27,15 +27,10 @@ public class TestMyContactList {
 	//	System.out.println("____________Enter Contact Prompt____________");
 		System.out.print("Enter your first name: ");
 		createContact.setFirstName(input.nextLine());
+		System.out.print("Enter your last name: ");
+		createContact.setLastName(input.nextLine());
 		
-		do{
-			System.out.print("Enter your last name: ");
-			createContact.setLastName(input.nextLine());
-			if(createContact.getLastName().isEmpty())
-				System.out.println("---You must enter in your last name---");
-		}while(createContact.getLastName().isEmpty());
-		
-	//	System.out.println("Street Address:");
+		System.out.println("Street Address:");
 		System.out.print("\t" + "Enter in your Street Number: ");
 		createContact.getStreetAddress().setStreetNumber(input.nextLine());
 		System.out.print("\t" + "Enter in your Street Name: ");
