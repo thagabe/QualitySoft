@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 /**
  * One object of this class represents an ArrayList containing Objects of class
- * Contact.
+ * Person.
  */
 public class MyContactList {
 
