@@ -7,14 +7,14 @@ import java.util.ArrayList;
  */
 public class MyContactList {
 
-	private List<Contact> contactList; // this stores the list of contacts
+	private List<Person> contactList; // this stores the list of contacts
 
 	/**
 	 * The Constructor takes care of initializing the ArrayList when this object
 	 * is instantiated.
 	 */
 	public MyContactList() {
-		contactList = new ArrayList<Contact>();
+		contactList = new ArrayList<Person>();
 	}
 
 	/**
@@ -22,7 +22,7 @@ public class MyContactList {
 	 * and adding them to the listFile. Checks if at least last name is present
 	 * otherwise it returns false and does not set anything.
 	 */
-	public void addContact(Contact person){
+	public void addContact(Person person){
 		if(!person.getLastName().trim().isEmpty())
 			contactList.add(person);
 	}
@@ -35,7 +35,7 @@ public class MyContactList {
 		System.out.println("-FIRST NAME-\t\t\t-LAST NAME-\t\t\t-STREETADDRESS-\t\t\t\t-EMAIL ADDRESS-\t\t\t-PHONE #-\t\t\t-NOTES-");
 		sortArray();
 		StringBuffer theFormat = new StringBuffer();
-		for (Contact element: contactList){
+		for (Person element: contactList){
 			theFormat.append(element.toString() + "\n");
 		}
 		return theFormat.toString();
@@ -58,13 +58,13 @@ public class MyContactList {
 	 * It then returns a Formatted String with the objects' stored information.
 	 */
 	public String searchContactByLastName(String searchLastName) {
-		List<Contact> lookUpList = new ArrayList<Contact>();
+		List<Person> lookUpList = new ArrayList<Person>();
 		String formatted = "";
 		
 		//Must Ignore Case
 		//search logic
 		
-		for (Contact i: lookUpList){
+		for (Person i: lookUpList){
 			formatted = i.toString() + "\n";
 		}
 		return formatted;
