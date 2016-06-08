@@ -122,22 +122,22 @@ public class Person {
 		
 		StringBuffer buffer = new StringBuffer();
 		if(!firstName.isEmpty())
-			buffer.append(firstName);
-		buffer.append("\t\t\t");
+			buffer.append("First Name:\n\t" + firstName);
+		//buffer.append("\t\t\t");
 		if(!lastName.isEmpty())
-			buffer.append(lastName);
-		buffer.append("\t\t\t");
+			buffer.append("\nLast Name:\n\t" + lastName);
+		//buffer.append("\t\t\t");
 		if(!streetAddress.toString().isEmpty())
-			buffer.append(streetAddress.toString());
-		buffer.append("\t\t\t\t");
+			buffer.append("\nStreet Address:\n\t" + StreetstreetAddress.toString());
+		//buffer.append("\t\t\t\t");
 		if(!emailAddress.isEmpty())
-			buffer.append(emailAddress);
-		buffer.append("\t\t\t");
+			buffer.append("\nEmail Address:\n\t" + emailAddress);
+		//buffer.append("\t\t\t");
 		if(!phoneNumber.isEmpty())
-			buffer.append(phoneNumber);
-		buffer.append("\t\t\t");
+			buffer.append("\nPhone Number:\n\t" + phoneNumber);
+		//buffer.append("\t\t\t");
 		if(!notes.isEmpty())
-			buffer.append(notes);
+			buffer.append("\nNotes:\n\t" + notes);
 		return buffer.toString();
 	}
 
