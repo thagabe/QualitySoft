@@ -32,7 +32,7 @@ public class MyContactList {
 	 **/
 	public String toString() {
 		
-		System.out.println("-FIRST NAME-\t\t\t-LAST NAME-\t\t\t-STREETADDRESS-\t\t\t\t-EMAIL ADDRESS-\t\t\t-PHONE #-\t\t\t-NOTES-");
+		//System.out.println("-FIRST NAME-\t\t\t-LAST NAME-\t\t\t-STREETADDRESS-\t\t\t\t-EMAIL ADDRESS-\t\t\t-PHONE #-\t\t\t-NOTES-");
 		sortArray();
 		StringBuffer theFormat = new StringBuffer();
 		for (Person element: contactList){
