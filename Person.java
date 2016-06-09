@@ -88,35 +88,35 @@ public class Person {
 	}
 
 	/**
-	 * Returns value of streetAddress
+	 * Returns value of streetAddress GR, AK
 	 */
 	public StreetAddress getStreetAddress() {
 		return streetAddress;
 	}
 
 	/**
-	 * Returns value of emailAddress
+	 * Returns value of emailAddress, GR, AK
 	 */
 	public String getEmailAddress() {
 		return emailAddress;
 	}
 
 	/**
-	 * Returns value of phoneNumber
+	 * Returns value of phoneNumber, GR, AK
 	 */
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
 
 	/**
-	 * Returns value of notes
+	 * Returns value of notes, GR, AK
 	 */
 	public String getNotes() {
 		return notes;
 	}
 
 	/**
-	 * Returns formatted string displaying all characteristics of Contact
+	 * Returns formatted string displaying all characteristics of Contact, GR, AK
 	 */
 	public String toString() {
 		
