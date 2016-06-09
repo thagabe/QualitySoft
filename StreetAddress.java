@@ -13,7 +13,7 @@ public class StreetAddress{
     
     //constructors
     /** Default Constructor
-     * This sets all strings to empty
+     * This sets all strings to empty, AL
      * **/
     public StreetAddress(){
     	this.streetNumber = "";
