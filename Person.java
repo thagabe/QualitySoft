@@ -1,5 +1,5 @@
 import java.util.Comparable;
-import java.util.Serializable;
+import java.io.Serializable;
 /**
  * One Object of the class Contact represents one person's contact information
  */
