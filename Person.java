@@ -3,7 +3,7 @@ import java.util.Comparable;
 /**
  * One Object of the class Contact represents one person's contact information
  */
-public class Person implements Comparable{
+public class Person implements Comparable<Person>{
 
 	private String firstName;
 	private String lastName;
@@ -116,7 +116,16 @@ public class Person implements Comparable{
 	public String getNotes() {
 		return notes;
 	}
-
+	/**
+	 * Returns 1, or -1 based on whether this's last name or o's last name comes
+	 * first alphabetically
+	 * **/
+	public int compareTo(Person o){
+		//return 1 of this.lastName > o.lastName
+		//return -1 of this.lastName < o.lastName
+		//else
+			//compare firstName
+	}
 	/**
 	 * Returns formatted string displaying all characteristics of Contact, GR, AK
 	 */
