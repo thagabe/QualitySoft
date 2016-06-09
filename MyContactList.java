@@ -58,18 +58,17 @@ public class MyContactList {
 	 * It then returns a Formatted String with the objects' stored information.AL, GR
 	 */
 	public String searchContactByLastName(String searchLastName) {
-		List<Person> lookUpList = new ArrayList<Person>();
-		String formatted = "";
 		
-		//Must Ignore Case
-		//search logic
+		StringBuffer theFormat = new StringBuffer();
+		sortArray();
 		
-		for (Person i: lookUpList){
-			formatted = i.toString() + "\n";
+		for(Person element: contactList){
+			if(element.getLastName().equals(searchLastName)){
+				theFormat.append(element.toString() + "\n");
+			}
 		}
-		return formatted;
+		return theFormat.toString();
 	}
-
 }
 
 /** Feedback from Alex
