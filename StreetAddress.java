@@ -1,4 +1,4 @@
-import java.io.Serializable
+import java.io.Serializable;
 /** Class StreetAddress
  * This class represents one street address object, it has fields that specify
  * a person's home address. It has getters, setters, and a toString method, AL
