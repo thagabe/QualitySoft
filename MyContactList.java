@@ -1,6 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
-
+import java.util.Collections;
 /**
  * One object of this class represents an ArrayList containing Objects of class
  * Person. AL, GR
@@ -49,6 +49,7 @@ public class MyContactList {
 	 */
 	
 	private void sortArray() {
+		Collections.sort(list);
 	}
 
 	/**
