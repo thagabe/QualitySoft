@@ -1,11 +1,12 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Serializable;
 /**
  * One object of this class represents an ArrayList containing Objects of class
  * Person. AL, GR
  */
-public class MyContactList {
+public class MyContactList implements Serializable{
 
 	private List<Person> contactList; // this stores the list of contacts
 
