@@ -49,7 +49,7 @@ public class MyContactList {
 	 */
 	
 	private void sortArray() {
-		Collections.sort(list);
+		Collections.sort(contactList);
 	}
 
 	/**
