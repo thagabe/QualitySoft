@@ -1,7 +1,9 @@
+import java.util.Comparable;
+
 /**
  * One Object of the class Contact represents one person's contact information
  */
-public class Person {
+public class Person implements Comparable{
 
 	private String firstName;
 	private String lastName;
