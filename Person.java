@@ -3,7 +3,7 @@ import java.util.Serializable;
 /**
  * One Object of the class Contact represents one person's contact information
  */
-public class Person implements Comparable<Person> implements Serializable{
+public class Person implements Comparable<Person> ,Serializable{
 
 	private String firstName;
 	private String lastName;
