@@ -150,12 +150,11 @@ public class Person implements Comparable<Person>,Serializable {
 	}
 
 }
-/** Feedback from Alex
- * I think this class is well done, it specifies what one object of this class
- * represents, has a constructor for each variable along with accessors and mutators.
- * In the future we will need to implement comparable so we can sort lists of these objects.
- * LEts hope the \t tabs do what we're hoping. There are some formatting classes java
- * has that we might be able to use
+/** Feedback from Alex (6/9/17)
+ * At line 148, you don't need to print out 2 new lines, this ended up making our toString() 
+ * MyContactList look too spaced. Also, for the second constructor, I don't like the idea of
+ * using the set methods to assign the varibles. The constructor has access to this class's
+ * private data. The set methods are meant to be used from outside this class.
  * **/
 /** Feedback from Adina
  * The definition of this class is organized, clear, and works correctly. I created the class to test it and to check that tabs do what 
