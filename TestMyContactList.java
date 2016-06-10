@@ -13,7 +13,6 @@ public class TestMyContactList {
 
 	public static void main(String[] args) {
 		MyContactList list = new MyContactList();
-		//System.out.println(list);  
 		new Person = promptUser();
 		list.addContact(promptUser());
 		System.out.println(list);
