@@ -29,7 +29,7 @@ public class MyContactList implements Serializable{
 	}
 
 	/**
-	 * This method calls sortArray(), then it will format the object's data to be returned to TestMyContactList.AL, GR
+	 * Formats the object of class MyContactList's data.AL, GR
 	 **/
 	public String toString() {
 		
