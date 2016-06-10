@@ -139,7 +139,7 @@ public class Person implements Comparable<Person>,Serializable {
 			buffer.append("\nLast Name:\n\t" + lastName);
 		//buffer.append("\t\t\t");
 		if(!streetAddress.toString().isEmpty())
-			buffer.append("\nStreet Address:\n\t" + StreetstreetAddress.toString());
+			buffer.append("\nStreet Address:\n\t" + streetAddress.toString());
 		//buffer.append("\t\t\t\t");
 		if(!emailAddress.isEmpty())
 			buffer.append("\nEmail Address:\n\t" + emailAddress);
