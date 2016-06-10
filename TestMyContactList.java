@@ -13,7 +13,7 @@ public class TestMyContactList {
 
 	public static void main(String[] args) {
 		MyContactList list = new MyContactList();
-		new Person = promptUser();
+	//	new Person = promptUser(); this is illegal
 		list.addContact(promptUser());
 		System.out.println(list);
 		list.addContact(promptUser()));
