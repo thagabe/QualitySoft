@@ -36,6 +36,7 @@ public class MyContactList implements Serializable{
 		//System.out.println("-FIRST NAME-\t\t\t-LAST NAME-\t\t\t-STREETADDRESS-\t\t\t\t-EMAIL ADDRESS-\t\t\t-PHONE #-\t\t\t-NOTES-");
 		sortArray();
 		StringBuffer theFormat = new StringBuffer();
+		theFormat.append("__All Contacts__\n");
 		for (Person element: contactList){
 			theFormat.append(element.toString() + "\n");
 		}
