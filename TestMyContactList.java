@@ -7,8 +7,7 @@ import java.util.Scanner;
 
 
 /** AL = Alex, GR = Gabe, AK = Adina
- * This Class tests our other 2 Classes [Contacts, MyContactList] by calling all
- * public methods on those Classes and (for the ones that return) will print output., GR, AK
+ * Creates object of class MyContactList, adds 2 contact to the list and prints them. GR, AK
  */
 public class TestMyContactList {
 
