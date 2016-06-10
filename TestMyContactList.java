@@ -14,12 +14,11 @@ public class TestMyContactList {
 
 	public static void main(String[] args) {
 		MyContactList list = new MyContactList();
+		//System.out.println(list);  
+		new Person = promptUser();
+		list.addContact(promptUser());
 		System.out.println(list);
-		list.addContact(new Person("Abraham","Ford", new StreetAddress("2521","South Court",
-			"Palo Alto","California","94306"),"smith@gmail.com","(650) 295-4836", "cs 1A"));
-		System.out.println(list);
-		list.addContact(new Person("Abraham","Ford", new StreetAddress("2521","South Court",
-			"Palo Alto","California","94306"),"smith@gmail.com","(650) 295-4836", "cs 1A"));
+		list.addContact(promptUser()));
 		System.out.println(list);
 	}
 	
@@ -56,15 +55,15 @@ public class TestMyContactList {
 		}while(createContact.getLastName().isEmpty());
 		
 		System.out.println("Street Address:");
-		System.out.print("\t" + "Enter in your street number: ");
+		System.out.print("\t" + "Enter your street number: ");
 		createContact.getStreetAddress().setStreetNumber(input.nextLine());
-		System.out.print("\t" + "Enter in your street name: ");
+		System.out.print("\t" + "Enter your street name: ");
 		createContact.getStreetAddress().setStreetName(input.nextLine());
-		System.out.print("\t" + "Enter in your city name: ");
+		System.out.print("\t" + "Enter your city name: ");
 		createContact.getStreetAddress().setCityName(input.nextLine());
-		System.out.print("\t" + "Enter in your state name: ");
+		System.out.print("\t" + "Enter your state name: ");
 		createContact.getStreetAddress().setStateName(input.nextLine());
-		System.out.print("\t" + "Enter in your zip code: ");
+		System.out.print("\t" + "Enter your zip code: ");
 		createContact.getStreetAddress().setZipCode(input.nextLine());
 		
 		System.out.print("Enter your email address: ");
