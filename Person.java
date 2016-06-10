@@ -1,4 +1,3 @@
-import java.util.Comparable;
 import java.io.Serializable;
 /**
  * One Object of the class Contact represents one person's contact information
@@ -133,22 +132,22 @@ public class Person implements Comparable<Person>,Serializable {
 		
 		StringBuffer buffer = new StringBuffer();
 		if(!firstName.isEmpty())
-			buffer.append("First Name:\n\t" + firstName);
-		//buffer.append("\t\t\t");
+			buffer.append("First Name:\t" + firstName + "\n");
+		
 		if(!lastName.isEmpty())
-			buffer.append("\nLast Name:\n\t" + lastName);
-		//buffer.append("\t\t\t");
+			buffer.append("Last Name:\t" + lastName + "\n");
+		
 		if(!streetAddress.toString().isEmpty())
-			buffer.append("\nStreet Address:\n\t" + streetAddress.toString());
-		//buffer.append("\t\t\t\t");
+			buffer.append("Street Address:\t" + streetAddress.toString() + "\n");
+		
 		if(!emailAddress.isEmpty())
-			buffer.append("\nEmail Address:\n\t" + emailAddress);
-		//buffer.append("\t\t\t");
+			buffer.append("Email Address:\t" + emailAddress + "\n");
+		
 		if(!phoneNumber.isEmpty())
-			buffer.append("\nPhone Number:\n\t" + phoneNumber);
-		//buffer.append("\t\t\t");
+			buffer.append("Phone Number:\t" + phoneNumber + "\n");
+		
 		if(!notes.isEmpty())
-			buffer.append("\nNotes:\n\t" + notes);
+			buffer.append("Notes:\t\t" + notes + "\n\n");
 		return buffer.toString();
 	}
 
