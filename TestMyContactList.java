@@ -69,8 +69,7 @@ public class TestMyContactList {
 		createContact.setPhoneNumber(input.nextLine());
 		System.out.print("Enter any notes about this contact: ");
 		createContact.setNotes(input.nextLine());
-		System.out.println("");
-		//System.out.println("____________End Prompt____________\n\n");
+		System.out.println();
 		return createContact;
 	}
 }
