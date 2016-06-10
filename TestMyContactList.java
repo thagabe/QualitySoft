@@ -14,9 +14,9 @@ public class TestMyContactList {
 	public static void main(String[] args) {
 		MyContactList list = new MyContactList();
 		list.addContact(promptUser());
-		System.out.println(list);
+		System.out.println(list.toString());
 		list.addContact(promptUser()));
-		System.out.println(list);
+		System.out.println(list.toString());
 	}
 	
 	//To use later
