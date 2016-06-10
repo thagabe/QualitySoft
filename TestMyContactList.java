@@ -118,7 +118,23 @@ Enter your email address: aiken.howard@gmail.com
 Enter your phone number: 6507873490
 Enter any notes about this contact: He is cool
 
-*********EXCEPTION THROWN HERE***************
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	This method must return a result of type int
+
+	at projectContact.Person.compareTo(Person.java:125)
+	at projectContact.Person.compareTo(Person.java:1)
+	at java.util.ComparableTimSort.countRunAndMakeAscending(ComparableTimSort.java:
+320)
+	at java.util.ComparableTimSort.sort(ComparableTimSort.java:188)
+	at java.util.Arrays.sort(Arrays.java:1312)
+	at java.util.Arrays.sort(Arrays.java:1506)
+	at java.util.ArrayList.sort(ArrayList.java:1454)
+	at java.util.Collections.sort(Collections.java:141)
+	at projectContact.MyContactList.sortArray(MyContactList.java:55)
+	at projectContact.MyContactList.toString(MyContactList.java:39)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.io.PrintStream.println(PrintStream.java:821)
+	at projectContact.TestMyContactList.main(TestMyContactList.java:23)
 
 --------------------------------------------------------------------------------------------------------------------------------- */
 /** Feedback from Alex 
