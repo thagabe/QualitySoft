@@ -120,10 +120,8 @@ public class Person implements Comparable<Person>,Serializable {
 	 * first alphabetically
 	 * **/
 	public int compareTo(Person o){
-		//return 1 of this.lastName > o.lastName
-		//return -1 of this.lastName < o.lastName
-		//else
-			//compare firstName
+		
+		
 	}
 	/**
 	 * Returns formatted string displaying all characteristics of Contact, GR, AK
