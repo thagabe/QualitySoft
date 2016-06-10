@@ -147,7 +147,7 @@ public class Person implements Comparable<Person>,Serializable {
 			buffer.append("Phone Number:\t" + phoneNumber + "\n");
 		
 		if(!notes.isEmpty())
-			buffer.append("Notes:\t\t" + notes + "\n\n");
+			buffer.append("Notes:\t\t" + notes + "\n");
 		return buffer.toString();
 	}
 
