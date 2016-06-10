@@ -80,60 +80,54 @@ Enter your first name: Richard
 Enter your last name: Feynman
 Street Address:
 	Enter in your street number: 111
-	Enter in your street name: N Rengstorff ave
+	Enter in your street name: Rengstorff Ave
 	Enter in your city name: Mountain View
 	Enter in your state name: CA
 	Enter in your zip code: 94043
 Enter your email address: rfeynman@gmail.com
-Enter your phone number: 6505375080
+Enter your phone number: (650) 385-5839
 Enter any notes about this contact: He is a physicist
 
-First Name:
-	Richard
-Last Name:
-	Feynman
-Street Address:
-	111 N Rengstorff ave, Mountain View, CA, 94043
-Email Address:
-	rfeynman@gmail.com
-Phone Number:
-	6505375080
-Notes:
-	He is a physicist
+__All Contacts__
+First Name:	Richard
+Last Name:	Feynman
+Street Address:	111 Rengstorff Ave, Mountain View, CA, 94043
+Email Address:	rfeynman@gmail.com
+Phone Number:	(650) 385-5839
+Notes:		He is a physicist
+
+
 
 Enter your first name: Howard
 Enter your last name: 
 ---You must enter in your last name---
 Please enter 'q' to quit or 'c' to contine
-Your Choice: c
+Your Choice:c
 Enter your last name: Aiken
 Street Address:
-	Enter in your street number: 575 
-	Enter in your street name: Hawthorne ave
+	Enter in your street number: 575
+	Enter in your street name: Hawthorne Ave
 	Enter in your city name: Los Altos Hills
-	Enter in your state name: CA
-	Enter in your zip code: 94022
+	Enter in your state name: 
+	Enter in your zip code: 
 Enter your email address: aiken.howard@gmail.com
-Enter your phone number: 6507873490
+Enter your phone number: 
 Enter any notes about this contact: He is cool
 
-Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
-	This method must return a result of type int
+__All Contacts__
+First Name:	Richard
+Last Name:	Feynman
+Street Address:	111 Rengstorff Ave, Mountain View, CA, 94043
+Email Address:	rfeynman@gmail.com
+Phone Number:	(650) 385-5839
+Notes:		He is a physicist
 
-	at projectContact.Person.compareTo(Person.java:125)
-	at projectContact.Person.compareTo(Person.java:1)
-	at java.util.ComparableTimSort.countRunAndMakeAscending(ComparableTimSort.java:
-320)
-	at java.util.ComparableTimSort.sort(ComparableTimSort.java:188)
-	at java.util.Arrays.sort(Arrays.java:1312)
-	at java.util.Arrays.sort(Arrays.java:1506)
-	at java.util.ArrayList.sort(ArrayList.java:1454)
-	at java.util.Collections.sort(Collections.java:141)
-	at projectContact.MyContactList.sortArray(MyContactList.java:55)
-	at projectContact.MyContactList.toString(MyContactList.java:39)
-	at java.lang.String.valueOf(String.java:2994)
-	at java.io.PrintStream.println(PrintStream.java:821)
-	at projectContact.TestMyContactList.main(TestMyContactList.java:23)
+
+First Name:	Howard
+Last Name:	Aiken
+Street Address:	575 Hawthorne Ave, Los Altos Hills
+Email Address:	aiken.howard@gmail.com
+Notes:		He is cool
 
 ---------------------------------------------------------------------------------------------- */
 /** Feedback from Alex 
