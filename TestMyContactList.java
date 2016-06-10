@@ -97,12 +97,11 @@ Phone Number:	(650) 385-5839
 Notes:		He is a physicist
 
 
-
 Enter your first name: Howard
 Enter your last name: 
 ---You must enter in your last name---
 Please enter 'q' to quit or 'c' to contine
-Your Choice:c
+Your Choice: c
 Enter your last name: Aiken
 Street Address:
 	Enter in your street number: 575
