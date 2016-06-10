@@ -29,7 +29,7 @@ public class MyContactList implements Serializable{
 	}
 
 	/**
-	 * Formats the object of class MyContactList's data.AL, GR
+	 * Formats the object of class MyContactList's data into a string and returns it.AL, GR
 	 **/
 	public String toString() {
 		
