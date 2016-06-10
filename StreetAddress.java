@@ -5,11 +5,11 @@ import java.io.Serializable;
  * **/
 public class StreetAddress implements Serializable{
     
-        String streetNumber;
-        String streetName;
-        String cityName;
-        String stateName;
-        String zipCode;
+        private String streetNumber;
+        private String streetName;
+        private String cityName;
+        private String stateName;
+        private String zipCode;
     
     //constructors
     /** Default Constructor
