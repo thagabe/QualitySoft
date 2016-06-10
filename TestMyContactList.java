@@ -75,7 +75,7 @@ public class TestMyContactList {
 	}
 }
 
-/* --------------------------------------------------------------------------------------------------------------------------------
+/* -------------------------------------RUN------------------------------------------------
 
 Enter your first name: Richard
 Enter your last name: Feynman
@@ -136,7 +136,7 @@ Exception in thread "main" java.lang.Error: Unresolved compilation problem:
 	at java.io.PrintStream.println(PrintStream.java:821)
 	at projectContact.TestMyContactList.main(TestMyContactList.java:23)
 
---------------------------------------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------------------------- */
 /** Feedback from Alex 
  * This class is a work in progress, we still need to take care of file input and output.
  * Since we are printing our contacts in a table, we must also print column names in main
