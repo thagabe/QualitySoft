@@ -41,7 +41,7 @@ public class TestMyContactList {
 			if(createContact.getLastName().isEmpty()){
 				System.out.println("---You must enter in your last name---");
 				while(!command.equals("q") && !command.equals("c")){
-					System.out.print("Please enter 'q' to quit or 'c' to contine\nYour Choice:");
+					System.out.print("Please enter 'q' to quit or 'c' to contine\nYour Choice: ");
 					command = input.nextLine().trim();
 					if(command.equals("q"))
 						return createContact;
@@ -71,24 +71,56 @@ public class TestMyContactList {
 		createContact.setPhoneNumber(input.nextLine());
 		System.out.print("Enter any notes about this contact: ");
 		createContact.setNotes(input.nextLine());
+		System.out.println("");
 		//System.out.println("____________End Prompt____________\n\n");
 		return createContact;
 	}
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------
-Contact Created Successfully!
 
-Should print out ContactList: 
-Alex	Lui	1729 Madras st	alex.lui@gmail.com	664-543-4122	Manager
+Enter your first name: Richard
+Enter your last name: Feynman
+Street Address:
+	Enter in your street number: 111
+	Enter in your street name: N Rengstorff ave
+	Enter in your city name: Mountain View
+	Enter in your state name: CA
+	Enter in your zip code: 94043
+Enter your email address: rfeynman@gmail.com
+Enter your phone number: 6505375080
+Enter any notes about this contact: He is a physicist
 
-Should print contact(s) if found [empty string for now]: 
+First Name:
+	Richard
+Last Name:
+	Feynman
+Street Address:
+	111 N Rengstorff ave, Mountain View, CA, 94043
+Email Address:
+	rfeynman@gmail.com
+Phone Number:
+	6505375080
+Notes:
+	He is a physicist
 
-------------------------------------
+Enter your first name: Howard
+Enter your last name: 
+---You must enter in your last name---
+Please enter 'q' to quit or 'c' to contine
+Your Choice: c
+Enter your last name: Aiken
+Street Address:
+	Enter in your street number: 575 
+	Enter in your street name: Hawthorne ave
+	Enter in your city name: Los Altos Hills
+	Enter in your state name: CA
+	Enter in your zip code: 94022
+Enter your email address: aiken.howard@gmail.com
+Enter your phone number: 6507873490
+Enter any notes about this contact: He is cool
 
-First Name: Gabe Last Name: Rodriguez Street: 1623 Van Halen Rd Email: g.rodriguez@gmail.com Phone: 650-123-4567 Notes: Programmer
-
-Gabe	Rodriguez	1623 Van Halen Rd	g.rodriguez@gmail.com	650-123-4567	Programmer
+*********EXCEPTION THROWN HERE***************
 
 --------------------------------------------------------------------------------------------------------------------------------- */
 /** Feedback from Alex 
