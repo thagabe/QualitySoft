@@ -8,19 +8,19 @@ import java.util.Scanner;
 
 /** AL = Alex, GR = Gabe, AK = Adina
  * This Class tests our other 2 Classes [Contacts, MyContactList] by calling all
- * public methods on those Classes and (for the ones that return) will print output., GR
+ * public methods on those Classes and (for the ones that return) will print output., GR, AK
  */
 public class TestMyContactList {
 
 	public static void main(String[] args) {
 		MyContactList list = new MyContactList();
-		System.out.println(list.toString());
+		System.out.println(list);
 		list.addContact(new Person("Abraham","Ford", new StreetAddress("2521","South Court",
-			"Palo Alto","California","94306"),"smith@gmail.com","(650) 295-4836"));
-		System.out.println(list.toString());
+			"Palo Alto","California","94306"),"smith@gmail.com","(650) 295-4836", "cs 1A"));
+		System.out.println(list);
 		list.addContact(new Person("Abraham","Ford", new StreetAddress("2521","South Court",
-			"Palo Alto","California","94306"),"smith@gmail.com","(650) 295-4836"));
-		System.out.println(list.toString());
+			"Palo Alto","California","94306"),"smith@gmail.com","(650) 295-4836", "cs 1A"));
+		System.out.println(list);
 	}
 	
 	//To use later
