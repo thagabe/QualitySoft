@@ -29,15 +29,15 @@ public class TestMyContactList {
 		Scanner input = new Scanner(System.in);
 		String command;
 		//System.out.println("____________Enter Contact Prompt____________");
-		System.out.print("Enter your first name: ");
+		System.out.print("Enter first name: ");
 		createContact.setFirstName(input.nextLine());
 		
 		do{
 			command = "";
-			System.out.print("Enter your last name: ");
+			System.out.print("Enter last name: ");
 			createContact.setLastName(input.nextLine());
 			if(createContact.getLastName().isEmpty()){
-				System.out.println("---You must enter in your last name---");
+				System.out.println("---You must enter in last name---");
 				while(!command.equals("q") && !command.equals("c")){
 					System.out.print("Please enter 'q' to quit or 'c' to contine\nYour Choice: ");
 					command = input.nextLine().trim();
@@ -52,20 +52,20 @@ public class TestMyContactList {
 		}while(createContact.getLastName().isEmpty());
 		
 		System.out.println("Street Address:");
-		System.out.print("\t" + "Enter your street number: ");
+		System.out.print("\t" + "Enter street number: ");
 		createContact.getStreetAddress().setStreetNumber(input.nextLine());
-		System.out.print("\t" + "Enter your street name: ");
+		System.out.print("\t" + "Enter street name: ");
 		createContact.getStreetAddress().setStreetName(input.nextLine());
-		System.out.print("\t" + "Enter your city name: ");
+		System.out.print("\t" + "Enter city name: ");
 		createContact.getStreetAddress().setCityName(input.nextLine());
-		System.out.print("\t" + "Enter your state name: ");
+		System.out.print("\t" + "Enter state name: ");
 		createContact.getStreetAddress().setStateName(input.nextLine());
-		System.out.print("\t" + "Enter your zip code: ");
+		System.out.print("\t" + "Enter zip code: ");
 		createContact.getStreetAddress().setZipCode(input.nextLine());
 		
-		System.out.print("Enter your email address: ");
+		System.out.print("Enter email address: ");
 		createContact.setEmailAddress(input.nextLine());
-		System.out.print("Enter your phone number: ");
+		System.out.print("Enter phone number: ");
 		createContact.setPhoneNumber(input.nextLine());
 		System.out.print("Enter any notes about this contact: ");
 		createContact.setNotes(input.nextLine());
@@ -76,16 +76,16 @@ public class TestMyContactList {
 
 /* -------------------------------------RUN------------------------------------------------
 
-Enter your first name: Richard
-Enter your last name: Feynman
+Enter first name: Richard
+Enter last name: Feynman
 Street Address:
-	Enter in your street number: 111
-	Enter in your street name: Rengstorff Ave
-	Enter in your city name: Mountain View
-	Enter in your state name: CA
-	Enter in your zip code: 94043
-Enter your email address: rfeynman@gmail.com
-Enter your phone number: (650) 385-5839
+	Enter street number: 111
+	Enter street name: Rengstorff Ave
+	Enter city name: Mountain View
+	Enter state name: CA
+	Enter zip code: 94043
+Enter email address: rfeynman@gmail.com
+Enter phone number: (650) 385-5839
 Enter any notes about this contact: He is a physicist
 
 __All Contacts__
@@ -97,20 +97,20 @@ Phone Number:	(650) 385-5839
 Notes:		He is a physicist
 
 
-Enter your first name: Howard
-Enter your last name: 
----You must enter in your last name---
+Enter first name: Howard
+Enter last name: 
+---You must enter in last name---
 Please enter 'q' to quit or 'c' to contine
 Your Choice: c
-Enter your last name: Aiken
+Enter last name: Aiken
 Street Address:
-	Enter in your street number: 575
-	Enter in your street name: Hawthorne Ave
-	Enter in your city name: Los Altos Hills
-	Enter in your state name: 
-	Enter in your zip code: 
-Enter your email address: aiken.howard@gmail.com
-Enter your phone number: 
+	Enter street number: 575
+	Enter street name: Hawthorne Ave
+	Enter city name: Los Altos Hills
+	Enter state name: 
+	Enter zip code: 
+Enter email address: aiken.howard@gmail.com
+Enter phone number: 
 Enter any notes about this contact: He is cool
 
 __All Contacts__
