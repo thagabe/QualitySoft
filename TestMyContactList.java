@@ -36,7 +36,7 @@ public class TestMyContactList {
 		try {
 			FileInputStream fileIn = new FileInputStream("contact_list.txt");
 			ObjectInputStream inStream = new ObjectInputStream(fileIn);
-			System.out.println("Deserialized data: \n" + inFile.readObject().toString());
+			System.out.println("Deserialized data: \n" + inStream.readObject().toString());
 			inFile.close();
 			fileIn.close()
 		} catch (FileNotFoundException e) {
