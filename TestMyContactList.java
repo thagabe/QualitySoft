@@ -24,25 +24,25 @@ public class TestMyContactList {
 			ObjectOutputStream outStream = new ObjectOutputStream(fileOut);
 			outStream.writeObject(list);
 			outStream.close();
-			fileOut();
+			fileOut.close();
 			System.out.println("\Serialization finished");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (FileNotFoundException fnfe) {
+			fnfe.printStackTrace();
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
 		}
 		
 		//deserialize an Object when program starts
 		try {
 			FileInputStream fileIn = new FileInputStream("contact_list.txt");
 			ObjectInputStream inStream = new ObjectInputStream(fileIn);
-			System.out.println("Deserialized data: \n" + inStream.readObject().toString());
-			inFile.close();
-			fileIn.close()
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Deserialized data: \n" + inStream.readObject());
+			inStream.close();
+			fileIn.close();
+		} catch (FileNotFoundException fnfe) {
+			fnfe.printStackTrace();
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
 		}
 	}
 	
