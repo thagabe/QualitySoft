@@ -18,7 +18,7 @@ public class TestMyContactList {
 		list.addContact(promptUser()));
 		System.out.println(list.toString());
 		
-		//serialize an Object
+		//serialize an Object if user quits program
 		try {
 			FileOutputStream fileOut = new FileOutputStream("contact_list.txt");
 			ObjectOutputStream outStream = new ObjectOutputStream(fileOut);
@@ -32,7 +32,7 @@ public class TestMyContactList {
 			e.printStackTrace();
 		}
 		
-		//deserialize an Object
+		//deserialize an Object when program starts
 		try {
 			FileInputStream fileIn = new FileInputStream("contact_list.txt");
 			ObjectInputStream inStream = new ObjectInputStream(fileIn);
