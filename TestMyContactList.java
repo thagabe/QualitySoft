@@ -11,12 +11,39 @@ import java.util.Scanner;
  */
 public class TestMyContactList {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException {
 		MyContactList list = new MyContactList();
 		list.addContact(promptUser());
 		System.out.println(list.toString());
 		list.addContact(promptUser()));
 		System.out.println(list.toString());
+		
+		//serialize an Object
+		try {
+			FileOutputStream fileOut = new FileOutputStream("contact_list.txt");
+			ObjectOutputStream outStream = new ObjectOutputStream(fileOut);
+			outStream.writeObject(list);
+			outStream.close();
+			fileOut();
+			System.out.println("\Serialization finished");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		//deserialize an Object
+		try {
+			FileInputStream fileIn = new FileInputStream("contact_list.txt");
+			ObjectInputStream inStream = new ObjectInputStream(fileIn);
+			System.out.println("Deserialized data: \n" + inFile.readObject().toString());
+			inFile.close();
+			fileIn.close()
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	//To use later
