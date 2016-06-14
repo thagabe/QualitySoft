@@ -38,13 +38,16 @@ public class TestMyContactList {
 				//search contact by last name
 					searchContactPrompt()
 					break;
+				case 'q':
+					saveContactsToDisk();
+					break;
 				default:
 					System.out.println("****Error, is not a recognized command.****");
 					break;
 			}
 		} 
-		saveContactsToDisk();
-	}
+		
+	} //End Main
 	
 	//To use later
 	/** promptUser() AL, AK
