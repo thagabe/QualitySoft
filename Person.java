@@ -130,22 +130,22 @@ public class Person implements Comparable<Person>,Serializable {
 		
 		StringBuffer buffer = new StringBuffer();
 		if(!firstName.isEmpty())
-			buffer.append("First Name:\t" + firstName + "\n");
+			buffer.append("\tFirst Name:\t" + firstName + "\n");
 		
 		if(!lastName.isEmpty())
-			buffer.append("Last Name:\t" + lastName + "\n");
+			buffer.append("\tLast Name:\t" + lastName + "\n");
 		
 		if(!streetAddress.toString().isEmpty())
-			buffer.append("Street Address:\t" + streetAddress.toString() + "\n");
+			buffer.append("\tStreet Address:\t" + streetAddress.toString() + "\n");
 		
 		if(!emailAddress.isEmpty())
-			buffer.append("Email Address:\t" + emailAddress + "\n");
+			buffer.append("\tEmail Address:\t" + emailAddress + "\n");
 		
 		if(!phoneNumber.isEmpty())
-			buffer.append("Phone Number:\t" + phoneNumber + "\n");
+			buffer.append("\tPhone Number:\t" + phoneNumber + "\n");
 		
 		if(!notes.isEmpty())
-			buffer.append("Notes:\t\t" + notes + "\n\n");
+			buffer.append("\tNotes:\t\t" + notes + "\n\n");
 		return buffer.toString();
 	}
 
