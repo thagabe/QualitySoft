@@ -25,32 +25,6 @@ public class TestMyContactList {
 		listFile = new File("ContactList.ser");
 		readExistingContactsFromDisk();
 		
-		//serialize an Object if user quits program
-		try {
-			FileOutputStream fileOut = new FileOutputStream("contact_list.txt");
-			ObjectOutputStream outStream = new ObjectOutputStream(fileOut);
-			outStream.writeObject(list);
-			outStream.close();
-			fileOut.close();
-			System.out.println("\Serialization finished");
-		} catch (FileNotFoundException fnfe) {
-			fnfe.printStackTrace();
-		} catch (IOException ioe) {
-			ioe.printStackTrace();
-		}
-		
-		//deserialize an Object when program starts
-		try {
-			FileInputStream fileIn = new FileInputStream("contact_list.txt");
-			ObjectInputStream inStream = new ObjectInputStream(fileIn);
-			System.out.println("Deserialized data: \n" + inStream.readObject());
-			inStream.close();
-			fileIn.close();
-		} catch (FileNotFoundException fnfe) {
-			fnfe.printStackTrace();
-		} catch (IOException ioe) {
-			ioe.printStackTrace();
-		}
 	}
 	
 	//To use later
