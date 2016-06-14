@@ -24,8 +24,7 @@ public class TestMyContactList {
 		Scanner scan = new Scanner(System.in);
 		listFile = new File("ContactList.ser");
 		readExistingContactsFromDisk();
-		showMenu();
-		char usersChoice = scan.next().charAt(0);
+		char usersChoice = showMenu();
 		String junk = scan.nextLine();
 		switch(usersChoice) {
 			case 'n':
@@ -102,7 +101,10 @@ public class TestMyContactList {
 	}
 	
 	//DRAFT 
-	 private static void showMenu() {
+	/**
+	 * Prints menu 
+	 */
+	 private static char showMenu() {
 	 	System.out.println("**********MAIN MENU**********");
 	 	System.out.println("Number of contacts in list: "); //number of contact
 	 	System.out.println("Enter: ");
@@ -110,7 +112,9 @@ public class TestMyContactList {
 	 	System.out.println("- /“p/” to print the contact list");
 	 	System.out.println("- /“s/” to search contacts by last name");
 	 	System.out.println("- /“q/” to quit the program");
-	 	System.out.println("Your Choice: ");
+	 	System.out.println("Your choice: ");
+	 	char choice = scan.next().charAt(0);
+	 	return choice;
 	 }
 	 
 	 
