@@ -24,7 +24,6 @@ public class TestMyContactList {
 		listFile = new File("ContactList.ser");
 		readExistingContactsFromDisk();
 		char usersChoice = showMenu();
-		String junk = scan.nextLine();
 		switch(usersChoice) {
 			case 'n':
 				//enter contact
@@ -117,6 +116,7 @@ public class TestMyContactList {
 	 	System.out.println("- /“q/” to quit the program");
 	 	System.out.print("Your choice: ");
 	 	char choice = scan.next().charAt(0);
+	 	String junk = scan.nextLine();
 	 	return choice;
 	 }
 	 
