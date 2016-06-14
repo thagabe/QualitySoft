@@ -23,28 +23,27 @@ public class TestMyContactList {
 	public static void main(String[] args) throws ClassNotFoundException {
 		listFile = new File("ContactList.ser");
 		readExistingContactsFromDisk();
-		char usersChoice = showMenu();
-		switch(usersChoice) {
-			case 'n':
+		while (usersChoice != 'q') { 
+			char usersChoice = showMenu();
+			switch(usersChoice) {
+				case 'n':
 				//enter contact
-				promptUser();
-				break;
-			case 'p':
+					promptUser();
+					break;
+				case 'p':
 				//print contact list
-				System.out.println(list.toString());
-				break;
-			case 's':
+					System.out.println(list.toString());
+					break;
+				case 's':
 				//search contact by last name
-				searchContactPrompt()
-				break;
-			case 'q':
-				//quit program
-				saveContactsToDisk()
-				break;
-			default:
-				System.out.println("****Error, ‘t’ is not a recognized command.****");
-				break;
-		}
+					searchContactPrompt()
+					break;
+				default:
+					System.out.println("****Error, ‘t’ is not a recognized command.****");
+					break;
+			}
+		} 
+		saveContactsToDisk()
 	}
 	
 	//To use later
