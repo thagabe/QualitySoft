@@ -13,6 +13,12 @@ import java.util.Scanner;
  */
 public class TestMyContactList {
 	MyContactList list;
+	static File listFile;
+	
+	static FileOutputStream fileOut;
+	static ObjectOutputStream objectOut;
+	static FileInputStream fileIn;
+	static ObjectInputStream objectIn;
 	
 	public static void main(String[] args) throws ClassNotFoundException {
 		list = new MyContactList();
@@ -111,6 +117,54 @@ public class TestMyContactList {
 	 * 
 	 */
 	 }
+	 
+	 private static void readExistingContactsFromDisk() {
+		
+		if(!listFile.exists()){
+			mainList = new MyContactList();
+			System.out.println("Zero contacts currently in list");
+			return;
+		}
+		try{
+			fileIn = new FileInputStream(listFile);
+			objectIn = new ObjectInputStream(fileIn);
+			mainList = (MyContactList)objectIn.readObject();
+			objectIn.close();
+			fileIn.close();
+		}catch(IOException i){
+			i.printStackTrace();
+			return;
+		}catch(ClassNotFoundException c){
+			System.out.println("MyContactList class not found");
+			c.printStackTrace();
+			return;
+		}
+		System.out.println("Number of Contacts in List: " + mainList.getListSize() + "\n");
+	}
+	
+	private static void saveContactsToDisk() {
+		
+		if(listFile.exists())
+			listFile.delete();
+		try {
+			fileOut = new FileOutputStream(listFile);
+			objectOut = new ObjectOutputStream(fileOut);
+			objectOut.writeObject(mainList);
+			objectOut.close();
+			fileOut.close();
+		} catch (IOException i) {
+			i.printStackTrace();
+		}
+	}
+	
+	private static void searchContactPrompt() {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter in a last name: ");
+		System.out.println(mainList.searchContactByLastName(input.nextLine()));
+		System.out.print("\nEnter any key to return to main menu...");
+		input.nextLine();
+		System.out.println();
+	}
 }
 
 /* -------------------------------------RUN------------------------------------------------
