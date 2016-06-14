@@ -21,9 +21,30 @@ public class TestMyContactList {
 	static ObjectInputStream objectIn;
 	
 	public static void main(String[] args) throws ClassNotFoundException {
-	
+		Scanner scan = new Scanner(System.in);
 		listFile = new File("ContactList.ser");
 		readExistingContactsFromDisk();
+		showMenu();
+		char usersChoice = scan.next().charAt(0);
+		String junk = scan.nextLine();
+		switch(usersChoice) {
+			case 'n':
+				//enter contact
+				break;
+			case 'p':
+				//print contact
+				break;
+			case 's':
+				//search contact by last name
+				break;
+			case 'q':
+				//quit program
+				break;
+			default:
+				System.out.println("****Error, ‘t’ is not a recognized command.****");
+)
+				
+		}
 		
 	
 		
