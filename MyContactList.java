@@ -53,7 +53,12 @@ public class MyContactList implements Serializable{
 	private void sortArray() {
 		Collections.sort(contactList);
 	}
-
+	/** 
+	 * This method returns the current size of contactList
+	 * **/
+	public int getListSize(){
+		return mainList.size();
+	}
 	/**
 	 * This method takes in a String which contains the last name to lookup in
 	 * the ArrayList. If an occurrence of the String is encountered it will
