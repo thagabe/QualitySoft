@@ -12,9 +12,10 @@ import java.util.Scanner;
  * Creates object of class MyContactList, adds 2 contact to the list and prints them. GR, AK
  */
 public class TestMyContactList {
-
+	MyContactList list;
+	
 	public static void main(String[] args) throws ClassNotFoundException {
-		MyContactList list = new MyContactList();
+		list = new MyContactList();
 		list.addContact(promptUser());
 		System.out.println(list.toString());
 		list.addContact(promptUser()));
