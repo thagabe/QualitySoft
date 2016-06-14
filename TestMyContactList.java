@@ -28,7 +28,7 @@ public class TestMyContactList {
 			switch(usersChoice) {
 				case 'n':
 				//enter contact
-					promptUser();
+					mainList.addContact(promptUser());
 					break;
 				case 'p':
 				//print contact list
@@ -36,7 +36,7 @@ public class TestMyContactList {
 					break;
 				case 's':
 				//search contact by last name
-					searchContactPrompt()
+					searchContactPrompt();
 					break;
 				case 'q':
 					saveContactsToDisk();
