@@ -101,6 +101,15 @@ public class TestMyContactList {
 		System.out.println();
 		return createContact;
 	}
+	
+	/**
+	 * static showMenu();
+	 * userChoice = scan.nextInt();
+	 * 
+	 * goes inside main : switch (usersChoice) { case:.......}
+	 * 
+	 */
+	 }
 }
 
 /* -------------------------------------RUN------------------------------------------------
