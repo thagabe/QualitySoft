@@ -12,16 +12,15 @@ import java.util.Scanner;
  * Creates object of class MyContactList, adds 2 contact to the list and prints them. GR, AK
  */
 public class TestMyContactList {
-	static MyContactList mainList;
-	static File listFile;
+	private static MyContactList mainList;
+	private static File listFile;
 	
-	static FileOutputStream fileOut;
-	static ObjectOutputStream objectOut;
-	static FileInputStream fileIn;
-	static ObjectInputStream objectIn;
+	private static FileOutputStream fileOut;
+	private static ObjectOutputStream objectOut;
+	private static FileInputStream fileIn;
+	private static ObjectInputStream objectIn;
 	
 	public static void main(String[] args) throws ClassNotFoundException {
-		Scanner scan = new Scanner(System.in);
 		listFile = new File("ContactList.ser");
 		readExistingContactsFromDisk();
 		char usersChoice = showMenu();
@@ -102,9 +101,10 @@ public class TestMyContactList {
 	
 	//DRAFT 
 	/**
-	 * Prints menu 
+	 * Prints menu and gets user's choice
 	 */
 	 private static char showMenu() {
+	 	Scanner scan = new Scanner(System.in);
 	 	System.out.println("**********MAIN MENU**********");
 	 	System.out.println("Number of contacts in list: "); //number of contact
 	 	System.out.println("Enter: ");
@@ -112,7 +112,7 @@ public class TestMyContactList {
 	 	System.out.println("- /“p/” to print the contact list");
 	 	System.out.println("- /“s/” to search contacts by last name");
 	 	System.out.println("- /“q/” to quit the program");
-	 	System.out.println("Your choice: ");
+	 	System.out.print("Your choice: ");
 	 	char choice = scan.next().charAt(0);
 	 	return choice;
 	 }
