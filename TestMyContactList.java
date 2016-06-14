@@ -25,6 +25,8 @@ public class TestMyContactList {
 		listFile = new File("ContactList.ser");
 		readExistingContactsFromDisk();
 		
+	
+		
 	}
 	
 	//To use later
