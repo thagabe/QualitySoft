@@ -76,7 +76,7 @@ public class MyContactList implements Serializable {
 		sortArray();
 		StringBuffer theFormat = new StringBuffer();
 		theFormat.append("__Search Results__\n");
-		for(Contact element : mainList){
+		for(Person element : contactList){
 			if(element.getLastName().compareToIgnoreCase(searchLastName.trim()) == 0){
 				theFormat.append(element.toString() + "\n");
 			}
