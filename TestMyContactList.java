@@ -112,12 +112,61 @@ public class TestMyContactList {
 	 	System.out.println("**********MAIN MENU**********");
 	 	System.out.println("Number of contacts in list: "); //number of contact
 	 	System.out.println("Enter: ");
-	 	System.out.println("- “n” to enter in a contact");
-	 	System.out.println("- “p” to print the contact list");
-	 	System.out.println("- “s” to search contacts by last name");
-	 	System.out.println("- “q” to quit the program");
+	 	System.out.println("- /“n/” to enter in a contact");
+	 	System.out.println("- /“p/” to print the contact list");
+	 	System.out.println("- /“s/” to search contacts by last name");
+	 	System.out.println("- /“q/” to quit the program");
 	 	System.out.println("Your Choice: ");
-	 };
+	 }
+	 
+	 
+	 private static void readExistingContactsFromDisk() {
+		
+		if(!listFile.exists()){
+			mainList = new MyContactList();
+			System.out.println("Zero contacts currently in list");
+			return;
+		}
+		try{
+			fileIn = new FileInputStream(listFile);
+			objectIn = new ObjectInputStream(fileIn);
+			mainList = (MyContactList)objectIn.readObject();
+			objectIn.close();
+			fileIn.close();
+		}catch(IOException i){
+			i.printStackTrace();
+			return;
+		}catch(ClassNotFoundException c){
+			System.out.println("MyContactList class not found");
+			c.printStackTrace();
+			return;
+		}
+		System.out.println("Number of Contacts in List: " + mainList.getListSize() + "\n");
+	}
+
+	private static void saveContactsToDisk() {
+		
+		if(listFile.exists())
+			listFile.delete();
+		try {
+			fileOut = new FileOutputStream(listFile);
+			objectOut = new ObjectOutputStream(fileOut);
+			objectOut.writeObject(mainList);
+			objectOut.close();
+			fileOut.close();
+		} catch (IOException i) {
+			i.printStackTrace();
+		}
+	}
+
+	private static void searchContactPrompt() {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter in a last name: ");
+		System.out.println(mainList.searchContactByLastName(input.nextLine()));
+		System.out.print("\nEnter any key to return to main menu...");
+		input.nextLine();
+		System.out.println();
+	}
 }
 
 /* -------------------------------------RUN------------------------------------------------
