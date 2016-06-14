@@ -39,11 +39,11 @@ public class TestMyContactList {
 					searchContactPrompt()
 					break;
 				default:
-					System.out.println("****Error, ‘t’ is not a recognized command.****");
+					System.out.println("****Error, is not a recognized command.****");
 					break;
 			}
 		} 
-		saveContactsToDisk()
+		saveContactsToDisk();
 	}
 	
 	//To use later
