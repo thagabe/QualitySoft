@@ -42,8 +42,7 @@ public class TestMyContactList {
 				saveContactsToDisk();
 				break;
 			default:
-				System.out
-						.println("****Error, is not a recognized command.****");
+				System.out.println("****Error, is not a recognized command.****");
 				break;
 			}
 		}
@@ -70,16 +69,14 @@ public class TestMyContactList {
 			if (createContact.getLastName().isEmpty()) {
 				System.out.println("---You must enter in last name---");
 				while (!command.equals("q") && !command.equals("c")) {
-					System.out
-							.print("Please enter 'q' to quit or 'c' to contine\nYour Choice: ");
+					System.out.print("Please enter 'q' to quit or 'c' to contine\nYour Choice: ");
 					command = input.nextLine().trim();
 					if (command.equals("q"))
 						return createContact;
 					else if (command.equals("c"))
 						;
 					else
-						System.out.println("Command '" + command
-								+ "' not found");
+						System.out.println("Command '" + command + "' not found");
 				}
 			}
 		} while (createContact.getLastName().isEmpty());
