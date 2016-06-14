@@ -121,7 +121,14 @@ public class Person implements Comparable<Person>,Serializable {
 	 * **/
 	public int compareTo(Person o){
 		
-		
+		if(this.lastName.compareToIgnoreCase(o.lastName) < 0)
+			return -1;
+		else if(this.lastName.compareToIgnoreCase(o.lastName) > 0 )
+			return 1;
+		else if(this.firstName.compareToIgnoreCase(o.firstName) < 0)
+			return -1;
+		else
+			return 1;
 	}
 	/**
 	 * Returns formatted string displaying all characteristics of Contact, GR, AK
