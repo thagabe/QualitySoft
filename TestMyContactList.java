@@ -30,6 +30,7 @@ public class TestMyContactList {
 		switch(usersChoice) {
 			case 'n':
 				//enter contact
+				promptUser();
 				break;
 			case 'p':
 				//print contact
@@ -42,12 +43,8 @@ public class TestMyContactList {
 				break;
 			default:
 				System.out.println("****Error, ‘t’ is not a recognized command.****");
-)
-				
+				break;
 		}
-		
-	
-		
 	}
 	
 	//To use later
