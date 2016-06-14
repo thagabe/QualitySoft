@@ -31,13 +31,16 @@ public class TestMyContactList {
 				promptUser();
 				break;
 			case 'p':
-				//print contact
+				//print contact list
+				System.out.println(list.toString());
 				break;
 			case 's':
 				//search contact by last name
+				searchContactPrompt()
 				break;
 			case 'q':
 				//quit program
+				saveContactsToDisk()
 				break;
 			default:
 				System.out.println("****Error, ‘t’ is not a recognized command.****");
