@@ -1,8 +1,10 @@
 import java.io.Serializable;
+
 /**
  * One Object of the class Contact represents one person's contact information
  */
-public class Person implements Comparable<Person>,Serializable {
+@SuppressWarnings("serial")
+public class Person implements Comparable<Person>, Serializable {
 
 	private String firstName;
 	private String lastName;
@@ -14,7 +16,7 @@ public class Person implements Comparable<Person>,Serializable {
 	/**
 	 * Sets private variables to passed arguments GR,AK
 	 */
-	public Person(){
+	public Person() {
 		firstName = "";
 		lastName = "";
 		streetAddress = new StreetAddress();
@@ -22,7 +24,9 @@ public class Person implements Comparable<Person>,Serializable {
 		phoneNumber = "";
 		notes = "";
 	}
-	public Person(String firstName, String lastName, StreetAddress streetAddress, String emailAddress,
+
+	public Person(String firstName, String lastName,
+			StreetAddress streetAddress, String emailAddress,
 			String phoneNumber, String notes) {
 		this.setFirstName(firstName);
 		this.setLastName(lastName);
@@ -115,56 +119,62 @@ public class Person implements Comparable<Person>,Serializable {
 	public String getNotes() {
 		return notes;
 	}
+
 	/**
 	 * Returns 1, or -1 based on whether this's last name or o's last name comes
 	 * first alphabetically
 	 * **/
-	public int compareTo(Person o){
-		
-		if(this.lastName.compareToIgnoreCase(o.lastName) < 0)
+	public int compareTo(Person o) {
+
+		if (this.lastName.compareToIgnoreCase(o.lastName) < 0)
 			return -1;
-		else if(this.lastName.compareToIgnoreCase(o.lastName) > 0 )
+		else if (this.lastName.compareToIgnoreCase(o.lastName) > 0)
 			return 1;
-		else if(this.firstName.compareToIgnoreCase(o.firstName) < 0)
+		else if (this.firstName.compareToIgnoreCase(o.firstName) < 0)
 			return -1;
 		else
 			return 1;
 	}
+
 	/**
-	 * Returns formatted string displaying all characteristics of Contact, GR, AK
+	 * Returns formatted string displaying all characteristics of Contact, GR,
+	 * AK
 	 */
 	public String toString() {
-		
+
 		StringBuffer buffer = new StringBuffer();
-		if(!firstName.isEmpty())
+		if (!firstName.isEmpty())
 			buffer.append("\tFirst Name:\t" + firstName + "\n");
-		
-		if(!lastName.isEmpty())
+
+		if (!lastName.isEmpty())
 			buffer.append("\tLast Name:\t" + lastName + "\n");
-		
-		if(!streetAddress.toString().isEmpty())
-			buffer.append("\tStreet Address:\t" + streetAddress.toString() + "\n");
-		
-		if(!emailAddress.isEmpty())
+
+		if (!streetAddress.toString().isEmpty())
+			buffer.append("\tStreet Address:\t" + streetAddress.toString()
+					+ "\n");
+
+		if (!emailAddress.isEmpty())
 			buffer.append("\tEmail Address:\t" + emailAddress + "\n");
-		
-		if(!phoneNumber.isEmpty())
+
+		if (!phoneNumber.isEmpty())
 			buffer.append("\tPhone Number:\t" + phoneNumber + "\n");
-		
-		if(!notes.isEmpty())
+
+		if (!notes.isEmpty())
 			buffer.append("\tNotes:\t\t" + notes + "\n\n");
 		return buffer.toString();
 	}
 
 }
-/** Feedback from Alex (6/9/17)
- * At line 148, you don't need to print out 2 new lines, this ended up making our toString() 
- * MyContactList look too spaced. Also, for the second constructor, I don't like the idea of
- * using the set methods to assign the varibles. The constructor has access to this class's
+/**
+ * Feedback from Alex (6/9/17) At line 148, you don't need to print out 2 new
+ * lines, this ended up making our toString() MyContactList look too spaced.
+ * Also, for the second constructor, I don't like the idea of using the set
+ * methods to assign the varibles. The constructor has access to this class's
  * private data. The set methods are meant to be used from outside this class.
  * **/
-/** Feedback from Adina
- * The definition of this class is organized, clear, and works correctly. I created the class to test it and to check that tabs do what 
- * we're hoping. The output:
- * Ann			Green			123 main St			12345678			ann@gmail.com			ann is cool
- * /
+/**
+ * Feedback from Adina The definition of this class is organized, clear, and
+ * works correctly. I created the class to test it and to check that tabs do
+ * what we're hoping. The output: Ann Green 123 main St 12345678 ann@gmail.com
+ * ann is cool
+ **/
