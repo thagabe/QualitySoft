@@ -12,13 +12,18 @@ import java.util.Scanner;
  * Creates object of class MyContactList, adds 2 contact to the list and prints them. GR, AK
  */
 public class TestMyContactList {
-
+	static MyContactList mainList;
+	static File listFile;
+	
+	static FileOutputStream fileOut;
+	static ObjectOutputStream objectOut;
+	static FileInputStream fileIn;
+	static ObjectInputStream objectIn;
+	
 	public static void main(String[] args) throws ClassNotFoundException {
-		MyContactList list = new MyContactList();
-		list.addContact(promptUser());
-		System.out.println(list.toString());
-		list.addContact(promptUser()));
-		System.out.println(list.toString());
+	
+		listFile = new File("ContactList.ser");
+		readExistingContactsFromDisk();
 		
 		//serialize an Object if user quits program
 		try {
