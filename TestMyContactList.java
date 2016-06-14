@@ -160,6 +160,8 @@ public class TestMyContactList {
 		} catch (IOException i) {
 			i.printStackTrace();
 		}
+		
+		System.out.println("--Program Quitted. Contacts saved to disk--");
 	}
 
 	private static void searchContactPrompt() {
