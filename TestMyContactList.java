@@ -234,8 +234,10 @@ public class TestMyContactList {
   * 2)UI has ONE space(\n) above each printed contact, programs output does not have any before the first contact and has two between 
   * following contacts.
   * 3)When list is printed, program does not have "Press Enter to return to main prompt: " as UI design does.
+  * 4)Also, Ui design and program output have different number of spaces between printed info. For exapmle, 
+  * "First Name:	Howard" in program output lacks spaces
   * 
-  * I tested the implementation of case 2 on my system and run I got is:
+  * I tested the implementation of case 2 on my system and run I got is: 
   * 
   * __All Contacts__
 	First Name:	Howard
