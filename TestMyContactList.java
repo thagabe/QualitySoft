@@ -42,7 +42,7 @@ public class TestMyContactList {
 				saveContactsToDisk();
 				break;
 			default:
-				System.out.println("****Error, is not a recognized command.****");
+				System.out.println("****Error, " + usersChoice + " is not a recognized command.****");
 				break;
 			}
 		}
@@ -105,7 +105,7 @@ public class TestMyContactList {
 
 	// DRAFT
 	/**
-	 * Prints menu and gets user's choice
+	 * Prints menu and gets and returns user's choice
 	 */
 	private static char showMenu() {
 		Scanner scan = new Scanner(System.in);
