@@ -226,3 +226,44 @@ public class TestMyContactList {
  * Assignments onthe constructor why don't we just call the setters thus
  * minimizing code? Do we need that many tabs?
  **/
+ 
+ /**
+  * Feedback fro Adina to Alex:
+  * Output does not match UI design, 
+  * 1)the first line should say "-------------Print Contact List------------" 
+  * 2)UI has ONE space(\n) above each printed contact, programs output does not have any before the first contact and has two between 
+  * following contacts.
+  * 3)When list is printed, program does not have "Press Enter to return to main prompt: " as UI design does.
+  * 
+  * I tested the implementation of case 2 on my system and run I got is:
+  * 
+  * __All Contacts__
+	First Name:	Howard
+	Last Name:	Aiken
+	Street Address:	555 S Charleston, Los Alamos, CA, 98543
+	Email Address:	aiken.howard@gmail.com
+	Phone Number:	6509874567
+	Notes:		he is a scientist
+
+
+	First Name:	Ann
+	Last Name:	Feynman
+	Street Address:	111 N Rengstorff ave, Mountain View, CA, 94043
+	Email Address:	feynman.ann@gmail.com
+	Phone Number:	6505375084
+	Notes:		cs2
+	
+	
+	First Name:	Richard
+	Last Name:	Feynman
+	Street Address:	111 N Rengstorff ave, Mountain View, CA, 94043
+	Email Address:	feynman.bob@gmail.com
+	Phone Number:	6505375085
+	Notes:		he is cool
+
+
+	First Name:	John
+	Last Name:	Nash
+	Street Address:	435 Showers Dr, Los Angeles, CA, 95043
+	Notes:		math
+
