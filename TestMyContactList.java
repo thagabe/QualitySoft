@@ -174,6 +174,7 @@ public class TestMyContactList {
 	 */
 	private static void searchContactPrompt() {
 		Scanner input = new Scanner(System.in);
+		System.out.println("\n---------Search contacts by last name--------");
 		System.out.print("Enter Last Name: ");
 		System.out.println(theContactList.searchContactByLastName(input
 				.nextLine()));
