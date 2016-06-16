@@ -147,7 +147,7 @@ public class Person implements Comparable<Person>, Serializable {
 
 		StringBuffer buffer = new StringBuffer();
 		if (!firstName.isEmpty())
-			buffer.append("\tFirst Name:\t" + firstName + "\n");
+			buffer.append("\n\tFirst Name:\t" + firstName + "\n");
 
 		if (!lastName.isEmpty())
 			buffer.append("\tLast Name:\t" + lastName + "\n");
