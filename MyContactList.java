@@ -6,16 +6,16 @@ import java.io.Serializable;
 /**
  * One object of this class represents an ArrayList containing Objects of class
  * Person. AL, GR
- */
+ **/
 @SuppressWarnings("serial")
 public class MyContactList implements Serializable {
 
-	private List<Person> contactList; // this stores the list of contacts
+	private List<Person> contactList;
 
 	/**
 	 * The Constructor takes care of initializing the ArrayList when this object
 	 * is instantiated.AL, GR
-	 */
+	 **/
 	public MyContactList() {
 		contactList = new ArrayList<Person>();
 	}
@@ -23,8 +23,8 @@ public class MyContactList implements Serializable {
 	/**
 	 * This method is in charge of creating a new contact from its parameters
 	 * and adding them to the listFile. Checks if at least last name is present
-	 * otherwise it returns false and does not set anything.AL, GR
-	 */
+	 * otherwise it returns false and does not set anything. AL, GR
+	 **/
 	public void addContact(Person person) {
 		if (!person.getLastName().trim().isEmpty())
 			contactList.add(person);
@@ -35,8 +35,7 @@ public class MyContactList implements Serializable {
 	 * returns it.AL, GR
 	 **/
 	public String toString() {
-
-		// System.out.println("-FIRST NAME-\t\t\t-LAST NAME-\t\t\t-STREETADDRESS-\t\t\t\t-EMAIL ADDRESS-\t\t\t-PHONE #-\t\t\t-NOTES-");
+		
 		sortArray();
 		StringBuffer theFormat = new StringBuffer();
 		theFormat.append("\n\n-------------Print Contact List------------\n");
@@ -50,17 +49,15 @@ public class MyContactList implements Serializable {
 	 * This method sorts the ArrayList based on the last name in alphabetical
 	 * order from the contacts that are already present in the List, if two
 	 * Contact objects share the same last name then sortArray() will arrange
-	 * them based on alphabetical order on the first names.AL, GR
-	 */
-
+	 * them based on alphabetical order on the first names. AL, GR
+	 **/
 	private void sortArray() {
 		Collections.sort(contactList);
 	}
 
 	/**
-	 * This method returns the current size of contactList
-	 * AL, GR
-	 */
+	 * This method returns the current size of contactList. AL, GR
+	 **/
 	public int getListSize() {
 		return contactList.size();
 	}
@@ -70,10 +67,10 @@ public class MyContactList implements Serializable {
 	 * the ArrayList. If an occurrence of the String is encountered it will
 	 * create a new ArrayList with the object(s) appended to this new ArrayList.
 	 * It then returns a Formatted String with the objects' stored
-	 * information.AL, GR
-	 */
+	 * information. AL, GR
+	 **/
 	public String searchContactByLastName(String searchLastName) {
-
+		
 		sortArray();
 		StringBuffer theFormat = new StringBuffer();
 		theFormat.append("\n-Results-\n");
@@ -92,7 +89,7 @@ public class MyContactList implements Serializable {
  * should be private, so that users of this class don't always have to call it
  * before printing the contact list.AL, GR
  * 
- * **/
+ **/
 
 /**
  * Feddback from Adina Use toString() method instead of getArrayListForPrint()
