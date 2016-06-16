@@ -111,7 +111,7 @@ public class TestMyContactList {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("\n**********MAIN MENU**********");
 		System.out.println("Number of Contacts in List: "
-				+ theContactList.getListSize()) // number of contact
+				+ theContactList.getListSize()); // number of contact
 		System.out.println("Enter: ");
 		System.out.println("- \"n\" to enter in a contact");
 		System.out.println("- \"p\" to print the contact list");
