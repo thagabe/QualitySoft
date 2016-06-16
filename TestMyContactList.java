@@ -109,7 +109,7 @@ public class TestMyContactList {
 	 */
 	private static char showMenu() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("\n\n**********MAIN MENU**********");
+		System.out.println("\n**********MAIN MENU**********");
 		System.out.println("Number of contacts in list: "); // number of contact
 		System.out.println("Enter: ");
 		System.out.println("- \"n\" to enter in a contact");
