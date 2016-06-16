@@ -185,28 +185,166 @@ public class TestMyContactList {
 	}
 }
 
-/*
- * -------------------------------------RUN--------------------------------------
- * ---------- Enter first name: Richard Enter last name: Feynman Street Address:
- * Enter street number: 111 Enter street name: Rengstorff Ave Enter city name:
- * Mountain View Enter state name: CA Enter zip code: 94043 Enter email address:
- * rfeynman@gmail.com Enter phone number: (650) 385-5839 Enter any notes about
- * this contact: He is a physicist __All Contacts__ First Name: Richard Last
- * Name: Feynman Street Address: 111 Rengstorff Ave, Mountain View, CA, 94043
- * Email Address: rfeynman@gmail.com Phone Number: (650) 385-5839 Notes: He is a
- * physicist Enter first name: Howard Enter last name: ---You must enter in last
- * name--- Please enter 'q' to quit or 'c' to contine Your Choice: c Enter last
- * name: Aiken Street Address: Enter street number: 575 Enter street name:
- * Hawthorne Ave Enter city name: Los Altos Hills Enter state name: Enter zip
- * code: Enter email address: aiken.howard@gmail.com Enter phone number: Enter
- * any notes about this contact: He is cool __All Contacts__ First Name: Richard
- * Last Name: Feynman Street Address: 111 Rengstorff Ave, Mountain View, CA,
- * 94043 Email Address: rfeynman@gmail.com Phone Number: (650) 385-5839 Notes:
- * He is a physicist First Name: Howard Last Name: Aiken Street Address: 575
- * Hawthorne Ave, Los Altos Hills Email Address: aiken.howard@gmail.com Notes:
- * He is cool
+/*-------------------------------------FINAL RUN--------------------------------------
+Number of Contacts in List: 3
+
+**********MAIN MENU**********
+Enter: 
+- "n" to enter in a contact
+- "p" to print the contact list
+- "s" to search contacts by last name
+- "q" to quit the program
+Your choice: p
+
+
+-------------Print Contact List------------
+
+	First Name:	Ann
+	Last Name:	Aiken
+	Street Address:	342 Holerith Rd, Los Angeles, CA, 86758
+	Email Address:	ann.aiken@gmail.com
+
+
+	First Name:	Howard
+	Last Name:	Aiken
+	Street Address:	575 S Charleston ave, Los Alamos, CA, 95067
+	Email Address:	howard.aiken@gmail.com
+	Phone Number:	6508796754
+	Notes:		cs
+
+
+
+	First Name:	Richard
+	Last Name:	Feynman
+	Street Address:	111 N Rengstorff ave, Mountain View, CA, 94043
+	Email Address:	bob.feynman@gmail.com
+	Phone Number:	6505375085
+	Notes:		he is cool
+
+
+
+
+**********MAIN MENU**********
+Enter: 
+- "n" to enter in a contact
+- "p" to print the contact list
+- "s" to search contacts by last name
+- "q" to quit the program
+Your choice: s
+
+---------Search contacts by last name--------
+Enter Last Name: Aiken
+
+-Results-
+
+	First Name:	Ann
+	Last Name:	Aiken
+	Street Address:	342 Holerith Rd, Los Angeles, CA, 86758
+	Email Address:	ann.aiken@gmail.com
+
+	First Name:	Howard
+	Last Name:	Aiken
+	Street Address:	575 S Charleston ave, Los Alamos, CA, 95067
+	Email Address:	howard.aiken@gmail.com
+	Phone Number:	6508796754
+	Notes:		cs
+
+
+
+Enter any key to return to main menu...
+
+
+**********MAIN MENU**********
+Enter: 
+- "n" to enter in a contact
+- "p" to print the contact list
+- "s" to search contacts by last name
+- "q" to quit the program
+Your choice: s
+
+---------Search contacts by last name--------
+Enter Last Name: Kosset
+
+-Results-
+
+
+Enter any key to return to main menu...
+
+
+**********MAIN MENU**********
+Enter: 
+- "n" to enter in a contact
+- "p" to print the contact list
+- "s" to search contacts by last name
+- "q" to quit the program
+Your choice: n
+Enter first name: 
+Enter last name: 
+---You must enter in last name---
+Please enter 'q' to quit or 'c' to contine
+Your Choice: c
+Enter last name: Kosset
+Street Address:
+	Enter street number: 
+	Enter street name: 
+	Enter city name: 
+	Enter state name: 
+	Enter zip code: 
+Enter email address: 
+Enter phone number: 
+Enter any notes about this contact: sister
+
+
+**********MAIN MENU**********
+Enter: 
+- "n" to enter in a contact
+- "p" to print the contact list
+- "s" to search contacts by last name
+- "q" to quit the program
+Your choice: p
+
+
+-------------Print Contact List------------
+
+	First Name:	Ann
+	Last Name:	Aiken
+	Street Address:	342 Holerith Rd, Los Angeles, CA, 86758
+	Email Address:	ann.aiken@gmail.com
+
+
+	First Name:	Howard
+	Last Name:	Aiken
+	Street Address:	575 S Charleston ave, Los Alamos, CA, 95067
+	Email Address:	howard.aiken@gmail.com
+	Phone Number:	6508796754
+	Notes:		cs
+
+
+
+	First Name:	Richard
+	Last Name:	Feynman
+	Street Address:	111 N Rengstorff ave, Mountain View, CA, 94043
+	Email Address:	bob.feynman@gmail.com
+	Phone Number:	6505375085
+	Notes:		he is cool
+
+
+	Last Name:	Kosset
+	Notes:		sister
+
+
+
+
+**********MAIN MENU**********
+Enter: 
+- "n" to enter in a contact
+- "p" to print the contact list
+- "s" to search contacts by last name
+- "q" to quit the program
+Your choice: q
+--Program Quitted. Contacts saved to disk--
  * --------------------------------------------------------------------
- * --------------------------
+
  */
 /**
  * Feedback from Alex This class is a work in progress, we still need to take
