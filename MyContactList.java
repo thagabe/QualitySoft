@@ -79,7 +79,7 @@ public class MyContactList implements Serializable {
 		theFormat.append("-Results-\n");
 		for(Person element : contactList){
 			if(element.getLastName().compareToIgnoreCase(searchLastName.trim()) == 0){
-				theFormat.append(element.toString() + "\n");
+				theFormat.append(element.toString());
 			}
 		}
 		return theFormat.toString();
