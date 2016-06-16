@@ -9,8 +9,9 @@ import java.util.Scanner;
 /**
  * AL = Alex, GR = Gabe, AK = Adina 
  * Creates object of class MyContactList and manupilates with that object. GR, AK
- */
+ **/
 public class TestMyContactList {
+	
 	private static MyContactList theContactList;
 	private static File listFile;
 
@@ -20,6 +21,7 @@ public class TestMyContactList {
 	private static ObjectInputStream objectIn;
 
 	public static void main(String[] args) throws ClassNotFoundException {
+		
 		listFile = new File("ContactList.ser");
 		readExistingContactsFromDisk();
 		char usersChoice = ' ';
@@ -58,7 +60,6 @@ public class TestMyContactList {
 		Person createContact = new Person();
 		Scanner input = new Scanner(System.in);
 		String command;
-		// System.out.println("____________Enter Contact Prompt____________");
 		System.out.print("Enter first name: ");
 		createContact.setFirstName(input.nextLine());
 
@@ -106,8 +107,9 @@ public class TestMyContactList {
 	/**
 	 * Prints menu, gets and returns user's choice 
 	 * AK
-	 */
+	 **/
 	private static char showMenu() {
+		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("\n**********MAIN MENU**********");
 		 // number of contact
@@ -121,10 +123,11 @@ public class TestMyContactList {
 		String junk = scan.nextLine();
 		return choice;
 	}
+	
 	/**
 	 * Reads data from file and prints how many contacts are in that file
 	 * AK, AL
-	 */
+	 **/
 	private static void readExistingContactsFromDisk() {
 
 		if (!listFile.exists()) {
@@ -149,10 +152,11 @@ public class TestMyContactList {
 		System.out.println("Number of Contacts in List: "
 				+ theContactList.getListSize());
 	}
+	
 	/**
 	 * Saves data to file and prints message saying that data is succesfully daved 
 	 * AL, AK
-	 */
+	 **/
 	private static void saveContactsToDisk() {
 
 		if (listFile.exists())
@@ -172,8 +176,9 @@ public class TestMyContactList {
 	/**
 	 * Prompts user for contact's last name to search for contact
 	 * AL, GR
-	 */
+	 **/
 	private static void searchContactPrompt() {
+		
 		Scanner input = new Scanner(System.in);
 		System.out.println("\n---------Search contacts by last name--------");
 		System.out.print("Enter Last Name: ");
@@ -343,9 +348,9 @@ Enter:
 - "q" to quit the program
 Your choice: q
 --Program Quitted. Contacts saved to disk--
- * --------------------------------------------------------------------
+--------------------------------------------------------------------------------- **/
 
- */
+
 /**
  * Feedback from Alex This class is a work in progress, we still need to take
  * care of file input and output. Since we are printing our contacts in a table,
@@ -354,7 +359,7 @@ Your choice: q
  * job such as printing, scanning, or reading. That way the main method doesn't
  * look so clutered. Also, lets rename the class from Tester to TestContactList
  * or something
- * **/
+ **/
 
 /**
  * Feedback from Adina Change the name of the class so that it matches the name
@@ -417,4 +422,4 @@ Your choice: q
 	Last Name:	Nash
 	Street Address:	435 Showers Dr, Los Angeles, CA, 95043
 	Notes:		math
-
+**/
