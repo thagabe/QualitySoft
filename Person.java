@@ -2,7 +2,7 @@ import java.io.Serializable;
 
 /**
  * One Object of the class Contact represents one person's contact information
- */
+ **/
 @SuppressWarnings("serial")
 public class Person implements Comparable<Person>, Serializable {
 
@@ -15,7 +15,7 @@ public class Person implements Comparable<Person>, Serializable {
 
 	/**
 	 * Sets private variables to default values GR,AK
-	 */
+ 	**/
 	public Person() {
 		firstName = "";
 		lastName = "";
@@ -27,7 +27,7 @@ public class Person implements Comparable<Person>, Serializable {
 	
 	/**
 	 * Sets private variable to passed arguments GR, AK
-	 */ 
+	 **/
 	public Person(String firstName, String lastName,
 			StreetAddress streetAddress, String emailAddress,
 			String phoneNumber, String notes) {
@@ -41,84 +41,84 @@ public class Person implements Comparable<Person>, Serializable {
 
 	/**
 	 * Sets firstName to newFirstName GR,AK
-	 */
+	 **/
 	public void setFirstName(String firstName) {
 		this.firstName = firstName.trim();
 	}
 
 	/**
 	 * Sets lastName to newFirstName GR,AK
-	 */
+	 **/
 	public void setLastName(String lastName) {
 		this.lastName = lastName.trim();
 	}
 
 	/**
 	 * Sets streetName to newStreetName GR,AK
-	 */
+	 **/
 	public void setStreetAddress(StreetAddress streetAddress) {
 		this.streetAddress = streetAddress;
 	}
 
 	/**
 	 * Sets emailAddress to newEmailAddress GR,AK
-	 */
+	 **/
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress.trim();
 	}
 
 	/**
 	 * Sets phoneNumber to newPhoneNumber GR,AK
-	 */
+	 **/
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber.trim();
 	}
 
 	/**
 	 * Sets notes to newNotes GR,AK
-	 */
+	 **/
 	public void setNotes(String notes) {
 		this.notes = notes.trim();
 	}
 
 	/**
 	 * Returns value of firstName GR,AK
-	 */
+	 **/
 	public String getFirstName() {
 		return firstName;
 	}
 
 	/**
 	 * Returns value of lastName GR,AK
-	 */
+	 **/
 	public String getLastName() {
 		return lastName;
 	}
 
 	/**
 	 * Returns value of streetAddress GR, AK
-	 */
+	 **/
 	public StreetAddress getStreetAddress() {
 		return streetAddress;
 	}
 
 	/**
 	 * Returns value of emailAddress, GR, AK
-	 */
+	 **/
 	public String getEmailAddress() {
 		return emailAddress;
 	}
 
 	/**
 	 * Returns value of phoneNumber, GR, AK
-	 */
+	 **/
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
 
 	/**
 	 * Returns value of notes, GR, AK
-	 */
+	 **/
 	public String getNotes() {
 		return notes;
 	}
@@ -126,7 +126,7 @@ public class Person implements Comparable<Person>, Serializable {
 	/**
 	 * Returns 1, or -1 based on whether this's last name or o's last name comes
 	 * first alphabetically
-	 * **/
+	 **/
 	public int compareTo(Person o) {
 
 		if (this.lastName.compareToIgnoreCase(o.lastName) < 0)
@@ -140,9 +140,9 @@ public class Person implements Comparable<Person>, Serializable {
 	}
 
 	/**
-	 * Returns formatted string displaying all characteristics of Contact, GR,
-	 * AK
-	 */
+	 * Returns formatted string displaying all characteristics of Contact. 
+	 * GR, AK
+	 **/
 	public String toString() {
 
 		StringBuffer buffer = new StringBuffer();
@@ -174,7 +174,7 @@ public class Person implements Comparable<Person>, Serializable {
  * Also, for the second constructor, I don't like the idea of using the set
  * methods to assign the varibles. The constructor has access to this class's
  * private data. The set methods are meant to be used from outside this class.
- * **/
+ **/
 /**
  * Feedback from Adina The definition of this class is organized, clear, and
  * works correctly. I created the class to test it and to check that tabs do
