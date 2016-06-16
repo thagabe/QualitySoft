@@ -59,7 +59,8 @@ public class MyContactList implements Serializable {
 
 	/**
 	 * This method returns the current size of contactList
-	 * **/
+	 * AL, GR
+	 */
 	public int getListSize() {
 		return contactList.size();
 	}
