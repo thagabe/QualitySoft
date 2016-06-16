@@ -39,7 +39,7 @@ public class MyContactList implements Serializable {
 		// System.out.println("-FIRST NAME-\t\t\t-LAST NAME-\t\t\t-STREETADDRESS-\t\t\t\t-EMAIL ADDRESS-\t\t\t-PHONE #-\t\t\t-NOTES-");
 		sortArray();
 		StringBuffer theFormat = new StringBuffer();
-		theFormat.append("-------------Print Contact List------------\n");
+		theFormat.append("\n\n-------------Print Contact List------------\n");
 		for (Person element : contactList) {
 			theFormat.append(element.toString() + "\n");
 		}
@@ -76,7 +76,7 @@ public class MyContactList implements Serializable {
 
 		sortArray();
 		StringBuffer theFormat = new StringBuffer();
-		theFormat.append("-Results-\n");
+		theFormat.append("\n-Results-\n");
 		for(Person element : contactList){
 			if(element.getLastName().compareToIgnoreCase(searchLastName.trim()) == 0){
 				theFormat.append(element.toString());
