@@ -7,8 +7,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * AL = Alex, GR = Gabe, AK = Adina Creates object of class MyContactList, adds
- * 2 contact to the list and prints them. GR, AK
+ * AL = Alex, GR = Gabe, AK = Adina 
+ * Creates object of class MyContactList and manupilates with that object. GR, AK
  */
 public class TestMyContactList {
 	private static MyContactList theContactList;
@@ -49,9 +49,9 @@ public class TestMyContactList {
 
 	} // End Main
 
-	// To use later
 	/**
-	 * promptUser() AL, AK This method takes care of all the user prompting and
+	 * AL, AK 
+	 * Takes care of all the user prompting and
 	 * returns a contact object containing all the information
 	 **/
 	private static Person promptUser() {
@@ -103,9 +103,9 @@ public class TestMyContactList {
 		return createContact;
 	}
 
-	// DRAFT
 	/**
-	 * Prints menu and gets and returns user's choice
+	 * Prints menu, gets and returns user's choice 
+	 * AK
 	 */
 	private static char showMenu() {
 		Scanner scan = new Scanner(System.in);
@@ -121,7 +121,10 @@ public class TestMyContactList {
 		String junk = scan.nextLine();
 		return choice;
 	}
-
+	/**
+	 * Reads data from file and prints how many contacts are in that file
+	 * AK, AL
+	 */
 	private static void readExistingContactsFromDisk() {
 
 		if (!listFile.exists()) {
@@ -146,7 +149,10 @@ public class TestMyContactList {
 		System.out.println("Number of Contacts in List: "
 				+ theContactList.getListSize() + "\n");
 	}
-
+	/**
+	 * Saves data to file and prints message saying that data is succesfully daved 
+	 * AL, AK
+	 */
 	private static void saveContactsToDisk() {
 
 		if (listFile.exists())
@@ -163,6 +169,10 @@ public class TestMyContactList {
 		System.out.println("--Program Quitted. Contacts saved to disk--");
 	}
 
+	/**
+	 * Prompts user for contact's last name to search for contact
+	 * AL, GR
+	 */
 	private static void searchContactPrompt() {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter in a last name: ");
