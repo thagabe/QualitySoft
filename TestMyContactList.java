@@ -109,7 +109,7 @@ public class TestMyContactList {
 	 */
 	private static char showMenu() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("**********MAIN MENU**********");
+		System.out.println("\n\n**********MAIN MENU**********");
 		System.out.println("Number of contacts in list: "); // number of contact
 		System.out.println("Enter: ");
 		System.out.println("- \"n\" to enter in a contact");
@@ -175,7 +175,7 @@ public class TestMyContactList {
 	 */
 	private static void searchContactPrompt() {
 		Scanner input = new Scanner(System.in);
-		System.out.print("Enter in a last name: ");
+		System.out.print("Enter Last Name: ");
 		System.out.println(theContactList.searchContactByLastName(input
 				.nextLine()));
 		System.out.print("\nEnter any key to return to main menu...");
