@@ -14,7 +14,7 @@ public class Person implements Comparable<Person>, Serializable {
 	private String notes;
 
 	/**
-	 * Sets private variables to passed arguments GR,AK
+	 * Sets private variables to default values GR,AK
 	 */
 	public Person() {
 		firstName = "";
@@ -24,7 +24,10 @@ public class Person implements Comparable<Person>, Serializable {
 		phoneNumber = "";
 		notes = "";
 	}
-
+	
+	/**
+	 * Sets private variable to passed arguments GR, AK
+	 */ 
 	public Person(String firstName, String lastName,
 			StreetAddress streetAddress, String emailAddress,
 			String phoneNumber, String notes) {
